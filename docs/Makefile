@@ -4,7 +4,7 @@
 # You can set these variables from the command line.
 SPHINXOPTS    =
 SPHINXBUILD   = sphinx-build
-SPHINXPROJ    = ../highway-env
+SPHINXPROJ    = ../correlatedpy
 SOURCEDIR     = source
 BUILDDIR      = _build
 
@@ -15,7 +15,7 @@ help:
 .PHONY: help Makefile
 
 apidoc:
-	sphinx-apidoc -o $(SOURCEDIR) -e ../highway_env
+	sphinx-apidoc -o $(SOURCEDIR) -e ../correlatedpy
 
 http:
 	python -mwebbrowser "http://localhost:8000/"
