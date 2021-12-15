@@ -1,5 +1,5 @@
-.. highway-env documentation master file, created by
-   sphinx-quickstart on Wed Feb 28 15:51:44 2018.
+.. correlatedpy documentation master file, created by
+   sphinx-quickstart on Wed Dec 15 15:51:44 2021.
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
@@ -28,7 +28,7 @@
 
 |Build Status| |Documentation Status| |Downloads| |Codacy Status| |Coverage Status| |Contributors| |Environments|
 
-Welcome to `highway-env <https://github.com/eleurent/highway-env>`_'s documentation!
+Welcome to `correlatedpy <https://github.com/oboufous/correlatedpy>`_'s documentation!
 ====================================================================================
 
 This project gathers a collection of environment for *decision-making* in Autonomous Driving.
@@ -48,13 +48,13 @@ BibTeX:
 
 .. code:: bibtex
 
-  @misc{highway-env,
-    author = {Leurent, Edouard},
-    title = {An Environment for Autonomous Driving Decision-Making},
-    year = {2018},
+  @misc{correlatedpy,
+    author = {Boufous, Omar},
+    title = {Correlatedpy: a python library for distributed learning of correlated equilibrium in multiplayer strategic games.},
+    year = {2021},
     publisher = {GitHub},
     journal = {GitHub repository},
-    howpublished = {\url{https://github.com/eleurent/highway-env}},
+    howpublished = {\url{https://github.com/oboufous/correlatedy}},
   }
 
 Documentation contents
