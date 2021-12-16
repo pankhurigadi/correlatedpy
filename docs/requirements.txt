@@ -2,7 +2,11 @@ numpy
 matplotlib
 quantecon # for computing the stationary distributions of a markov matrix
 scipy
+sphinx_rtd_theme
+sphinxcontrib-bibtex<2.0.0
 
+# jupyter-sphinx
+git+git://github.com/eleurent/jupyter-sphinx@master#egg=jupyter-sphinx
 
 # =========
 # Optionals
