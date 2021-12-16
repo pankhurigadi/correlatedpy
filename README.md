@@ -44,7 +44,7 @@ Agents solving the `highway-env` environments are available in the [eleurent/rl-
 
 See the [documentation](https://highway-env.readthedocs.io/en/latest/quickstart.html#training-an-agent) for some examples and notebooks.
 
-### [Deep Q-Network](https://github.com/eleurent/rl-agents/tree/master/rl_agents/agents/deep_q_network)
+### [Chicken Game](https://en.wikipedia.org/wiki/Chicken_(game))
 
 <p align="center">
     <img src="https://raw.githubusercontent.com/eleurent/highway-env/master/../gh-media/docs/media/dqn.gif?raw=true"><br/>
@@ -53,7 +53,7 @@ See the [documentation](https://highway-env.readthedocs.io/en/latest/quickstart.
 
 This model-free value-based reinforcement learning agent performs Q-learning with function approximation, using a neural network to represent the state-action value function Q.
 
-### [Deep Deterministic Policy Gradient](https://github.com/openai/baselines/tree/master/baselines/her)
+### [Rock-Paper-Scissors](https://en.wikipedia.org/wiki/Rock_paper_scissors)
 
 <p align="center">
     <img src="https://raw.githubusercontent.com/eleurent/highway-env/master/../gh-media/docs/media/ddpg.gif?raw=true"><br/>
