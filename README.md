@@ -62,27 +62,6 @@ This model-free value-based reinforcement learning agent performs Q-learning wit
 
 This model-free policy-based reinforcement learning agent is optimized directly by gradient ascent. It uses Hindsight Experience Replay to efficiently learn how to solve a goal-conditioned task.
 
-### [Value Iteration](https://github.com/eleurent/rl-agents/blob/master/rl_agents/agents/dynamic_programming/value_iteration.py)
-
-<p align="center">
-    <img src="https://raw.githubusercontent.com/eleurent/highway-env/master/../gh-media/docs/media/ttcvi.gif?raw=true"><br/>
-    <em>The Value Iteration agent solving highway-v0.</em>
-</p>
-
-The Value Iteration is only compatible with finite discrete MDPs, so the environment is first approximated by a [finite-mdp environment](https://github.com/eleurent/finite-mdp) using `env.to_finite_mdp()`. This simplified state representation describes the nearby traffic in terms of predicted Time-To-Collision (TTC) on each lane of the road. The transition model is simplistic and assumes that each vehicle will keep driving at a constant speed without changing lanes. This model bias can be a source of mistakes.
-
-The agent then performs a Value Iteration to compute the corresponding optimal state-value function.
-
-### [Monte-Carlo Tree Search](https://github.com/eleurent/rl-agents/blob/master/rl_agents/agents/tree_search/mcts.py)
-
-This agent leverages a transition and reward models to perform a stochastic tree search [(Coulom, 2006)](https://hal.inria.fr/inria-00116992/document) of the optimal trajectory. No particular assumption is required on the state representation or transition model.
-
-<p align="center">
-    <img src="https://raw.githubusercontent.com/eleurent/highway-env/master/../gh-media/docs/media/mcts.gif?raw=true"><br/>
-    <em>The MCTS agent solving highway-v0.</em>
-</p>
-
-
 
 ## Installation
 
