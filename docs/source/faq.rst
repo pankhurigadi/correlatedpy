@@ -27,8 +27,7 @@ My videos are too fast / have a low framerate.
 
   # Wrap the env by a Monitor, which will record videos
   #env = gym.make("highway-v0")
-  #env = Monitor(env, directory="run",
-                video_callable=lambda e: True)  # record all episodes
+  #env = Monitor(env, directory="run", video_callable=lambda e: True)  # record all episodes
 
   # Feed the monitor to the wrapped environment, so it has access to the video recorder
   # and can send it intermediate simulation frames.
