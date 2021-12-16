@@ -19,10 +19,24 @@ The library implements a distributed learning algorithm allowing players to conv
 
 ## The Environment
 
+### Parameters
+The game has global parameters that are shared accross all instances of all classes of the game.
+
+```python
+
+history = [(0,0)]
+gamma = 1
+epsilon = 0.02 
+alpha = 0.01
+```
+
 ### Players
 
 ```python
-env = gym.make("highway-v0")
+
+P1 = Player(number = 1, actions = [0, 1], payoff = np.array([[0, 0], [1, -1]]), state = 'asyn', history = [(0, 0)], gamma = 1, epsilon = 0.02, alpha = 0.01)
+P2 = Player(number = 2, actions = [0, 1], payoff = np.array([[0, 0], [-1, 1]]), state = 'asyn', history = [(0, 0)], gamma = 1, epsilon = 0.02, alpha = 0.01)
+
 ```
 
 In this task, the ego-vehicle is driving on a multilane highway populated with other vehicles.
@@ -32,17 +46,19 @@ A faster variant, `highway-fast-v0` is also available, with a degraded simulatio
 
 ### Game
 
+After creating players, we can now instanciate a game and define how many rounds to play.
+
 ```python
-env = gym.make("merge-v0")
+T = 100000
+
+G = Game(T, history, gamma = 1, epsilon = 0.02, alpha=0.01)
 ```
 
 In this task, the ego-vehicle starts on a main highway but soon approaches a road junction with incoming vehicles on the access ramp. The agent's objective is now to maintain a high speed while making room for the vehicles so that they can safely merge in the traffic.
 
 ## Examples of Games
 
-Agents solving the `highway-env` environments are available in the [eleurent/rl-agents](https://github.com/eleurent/rl-agents) and [DLR-RM/stable-baselines3](https://github.com/DLR-RM/stable-baselines3) repositories.
-
-See the [documentation](https://highway-env.readthedocs.io/en/latest/quickstart.html#training-an-agent) for some examples and notebooks.
+See the [documentation](https://correlatedpy.readthedocs.io/en/latest/quickstart.html) for some examples and notebooks.
 
 ### [Chicken Game](https://en.wikipedia.org/wiki/Chicken_(game))
 
