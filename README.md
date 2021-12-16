@@ -68,12 +68,10 @@ See the [documentation](https://correlatedpy.readthedocs.io/en/latest/quickstart
 
 
 <div align="center">
-
 &nbsp; | <b>D</b> | <b>C</b>  
 --- | --- | --- 
 <b>D</b> | 0,0 | 7,2 
 <b>C</b> | 2,7 | 6,6 
-
 </div>
 
 <p align="center">
@@ -84,6 +82,15 @@ See the [documentation](https://correlatedpy.readthedocs.io/en/latest/quickstart
 This model-free value-based reinforcement learning agent performs Q-learning with function approximation, using a neural network to represent the state-action value function Q.
 
 ### [Rock-Paper-Scissors](https://en.wikipedia.org/wiki/Rock_paper_scissors)
+
+
+<div align="center">
+&nbsp; | <b>R</b> | <b>P</b> | <b>S</b>  
+--- | --- | --- 
+<b>R</b> | 0,0 | -1,1 | 1,-1
+<b>P</b> | 1,-1 | 0,0 | -1,1
+<b>S</b> | -1,1 | 1,-1 | 0,0
+</div>
 
 <p align="center">
     <img src="https://raw.githubusercontent.com/eleurent/highway-env/master/../gh-media/docs/media/ddpg.gif?raw=true"><br/>
