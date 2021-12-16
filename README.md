@@ -66,9 +66,9 @@ See the [documentation](https://correlatedpy.readthedocs.io/en/latest/quickstart
 
 ### [Chicken Game](https://en.wikipedia.org/wiki/Chicken_(game))
 
-<p float="left">
-    <img src="https://raw.githubusercontent.com/eleurent/highway-env/master/../gh-media/docs/media/dqn.gif?raw=true"><br/>
-    <img src="https://raw.githubusercontent.com/eleurent/highway-env/master/../gh-media/docs/media/dqn.gif?raw=true"><br/>
+<p align="center">
+    <img src="https://raw.githubusercontent.com/eleurent/highway-env/master/../gh-media/docs/media/ddpg.gif?raw=true"><br/>
+    <em>The DDPG agent solving parking-v0.</em>
 </p>
 
 This model-free value-based reinforcement learning agent performs Q-learning with function approximation, using a neural network to represent the state-action value function Q.
