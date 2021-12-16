@@ -4,25 +4,25 @@
    contain the root `toctree` directive.
 
 
-.. |Build Status| image:: https://github.com/eleurent/highway-env/workflows/build/badge.svg
-   :target: https://github.com/eleurent/highway-env/workflows/build/
+.. |Build Status| image:: https://github.com/oboufous/correlatedpy/workflows/build/badge.svg
+   :target: https://github.com/oboufous/correlatedpy/workflows/build/
 
-.. |Documentation Status| image:: https://readthedocs.org/projects/highway-env/badge/?version=latest
-   :target: https://highway-env.readthedocs.io/en/latest/
+.. |Documentation Status| image:: https://readthedocs.org/projects/correlatedpy/badge/?version=latest
+   :target: https://correlatedpy.readthedocs.io/en/latest/
 
-.. |Downloads| image:: https://img.shields.io/pypi/dm/highway-env
-   :target: https://pypi.org/project/highway-env/
+.. |Downloads| image:: https://img.shields.io/pypi/dm/correlatedpy
+   :target: https://pypi.org/project/correlatedpy/
 
 .. |Codacy Status| image:: https://api.codacy.com/project/badge/Grade/63847d9328f64fce9c137b03fcafcc27
-  :target: https://app.codacy.com/manual/eleurent/highway-env?utm_source=github.com&utm_medium=referral&utm_content=eleurent/highway-env&utm_campaign=Badge_Grade_Dashboard
+  :target: https://app.codacy.com/manual/oboufous/correlatedpy?utm_source=github.com&utm_medium=referral&utm_content=oboufous/correlatedpy&utm_campaign=Badge_Grade_Dashboard
 
-.. |Coverage Status| image:: https://codecov.io/gh/eleurent/highway-env/branch/master/graph/badge.svg
-  :target: https://codecov.io/gh/eleurent/highway-env
+.. |Coverage Status| image:: https://codecov.io/gh/oboufous/correlatedpy/branch/master/graph/badge.svg
+  :target: https://codecov.io/gh/oboufous/correlatedpy
 
 .. |Contributors| image:: https://img.shields.io/github/contributors/oboufous/correlatedpy
   :target: https://github.com/oboufous/correlatedpy/graphs/contributors
 
-.. |Environments| image:: https://img.shields.io/github/search/oboufous/correlatedpy/import%20filename:*_env%20path:correlated/env?label=environments
+.. |Environments| image:: https://img.shields.io/github/search/oboufous/correlatedpy/import%20filename:*_env%20path:correlated/env?label=games
   :target: https://correlatedpy.readthedocs.io/en/latest/quickstart.html#all-the-environments
 
 
