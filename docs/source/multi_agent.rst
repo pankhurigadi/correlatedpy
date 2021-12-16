@@ -12,21 +12,21 @@ To that end, update the :ref:`environment configuration <Configuring an environm
 
 .. jupyter-execute::
 
-  import gym
-  import highway_env
+  # import gym
+  # import highway_env
 
-  env = gym.make('highway-v0')
-  env.seed(0)
+  # env = gym.make('highway-v0')
+  # env.seed(0)
 
-  env.configure({"controlled_vehicles": 2})  # Two controlled vehicles
-  env.configure({"vehicles_count": 1})  # A single other vehicle, for the sake of visualisation
-  env.reset()
+  # env.configure({"controlled_vehicles": 2})  # Two controlled vehicles
+  # env.configure({"vehicles_count": 1})  # A single other vehicle, for the sake of visualisation
+  # env.reset()
 
-  from matplotlib import pyplot as plt
-  %matplotlib inline
-  plt.imshow(env.render(mode="rgb_array"))
-  plt.title("Controlled vehicles are in green")
-  plt.show()
+  # from matplotlib import pyplot as plt
+  # %matplotlib inline
+  # plt.imshow(env.render(mode="rgb_array"))
+  # plt.title("Controlled vehicles are in green")
+  # plt.show()
 
 Change the action space
 -----------------------
@@ -37,27 +37,27 @@ The type of actions contained in the tuple must be described by a standard :ref:
 
 .. jupyter-execute::
 
-  env.configure({
-    "action": {
-      "type": "MultiAgentAction",
-      "action_config": {
-        "type": "DiscreteMetaAction",
-      }
-    }
-  })
-  env.reset()
+  # env.configure({
+    # "action": {
+      # "type": "MultiAgentAction",
+      # "action_config": {
+        # "type": "DiscreteMetaAction",
+      # }
+    # }
+  # })
+  # env.reset()
 
-  _, (ax1, ax2) = plt.subplots(nrows=2)
-  ax1.imshow(env.render(mode="rgb_array"))
-  ax1.set_title("Initial state")
+  # _, (ax1, ax2) = plt.subplots(nrows=2)
+  # ax1.imshow(env.render(mode="rgb_array"))
+  # ax1.set_title("Initial state")
 
-  # Make the first vehicle change to the left lane, and the second one to the right
-  action_1, action_2 = 0, 2  # See highway_env.envs.common.action.DiscreteMetaAction.ACTIONS_ALL
-  env.step((action_1, action_2))
+  # # Make the first vehicle change to the left lane, and the second one to the right
+  # action_1, action_2 = 0, 2  # See highway_env.envs.common.action.DiscreteMetaAction.ACTIONS_ALL
+  # env.step((action_1, action_2))
 
-  ax2.imshow(env.render(mode="rgb_array"))
-  ax2.set_title("After sending actions to each vehicle")
-  plt.show()
+  # ax2.imshow(env.render(mode="rgb_array"))
+  # ax2.set_title("After sending actions to each vehicle")
+  # plt.show()
 
 
 Change the observation space
@@ -71,18 +71,18 @@ The type of observations contained in the tuple must be described by a standard 
 
 .. jupyter-execute::
 
-  env.configure({
-    "observation": {
-      "type": "MultiAgentObservation",
-      "observation_config": {
-        "type": "Kinematics",
-      }
-    }
-  })
-  obs = env.reset()
+  # env.configure({
+    # "observation": {
+      # "type": "MultiAgentObservation",
+      # "observation_config": {
+        # "type": "Kinematics",
+      # }
+    # }
+  # })
+  # obs = env.reset()
 
-  import pprint
-  pprint.pprint(obs)
+  # import pprint
+  # pprint.pprint(obs)
 
 Wrapping it up
 --------------
@@ -92,46 +92,46 @@ Here is a pseudo-code example of how a centralized multi-agent policy could be t
 .. jupyter-execute::
 
   # Multi-agent environment configuration
-  env.configure({
-    "controlled_vehicles": 2,
-    "observation": {
-      "type": "MultiAgentObservation",
-      "observation_config": {
-        "type": "Kinematics",
-      }
-    },
-    "action": {
-      "type": "MultiAgentAction",
-      "action_config": {
-        "type": "DiscreteMetaAction",
-      }
-    }
-  })
+  # env.configure({
+    # "controlled_vehicles": 2,
+    # "observation": {
+      # "type": "MultiAgentObservation",
+      # "observation_config": {
+        # "type": "Kinematics",
+      # }
+    # },
+    # "action": {
+      # "type": "MultiAgentAction",
+      # "action_config": {
+        # "type": "DiscreteMetaAction",
+      # }
+    # }
+  # })
 
-  # Dummy RL algorithm
-  class Model:
-    """ Dummy code for an RL algorithm, which predicts an action from an observation,
-    and update its model from observed transitions."""
+  # # Dummy RL algorithm
+  # class Model:
+    # """ Dummy code for an RL algorithm, which predicts an action from an observation,
+    # and update its model from observed transitions."""
 
-    def predict(self, obs):
-      return 0
+    # def predict(self, obs):
+      # return 0
 
-    def update(self, obs, action, next_obs, reward, info, done):
-      pass
-  model = Model()
+    # def update(self, obs, action, next_obs, reward, info, done):
+      # pass
+  # model = Model()
 
-  # A training episode
-  obs = env.reset()
-  done = False
-  while not done:
-    # Dispatch the observations to the model to get the tuple of actions
-    action = tuple(model.predict(obs_i) for obs_i in obs)
-    # Execute the actions
-    next_obs, reward, info, done = env.step(action)
-    # Update the model with the transitions observed by each agent
-    for obs_i, action_i, next_obs_i in zip(obs, action, next_obs):
-      model.update(obs_i, action_i, next_obs_i, reward, info, done)
-    obs = next_obs
+  # # A training episode
+  # obs = env.reset()
+  # done = False
+  # while not done:
+    # # Dispatch the observations to the model to get the tuple of actions
+    # action = tuple(model.predict(obs_i) for obs_i in obs)
+    # # Execute the actions
+    # next_obs, reward, info, done = env.step(action)
+    # # Update the model with the transitions observed by each agent
+    # for obs_i, action_i, next_obs_i in zip(obs, action, next_obs):
+      # model.update(obs_i, action_i, next_obs_i, reward, info, done)
+    # obs = next_obs
 
 
 For example, this is supported by `eleurent/rl-agents <https://github.com/eleurent/rl-agents>`_'s DQN implementation, and can be run with
@@ -139,10 +139,10 @@ For example, this is supported by `eleurent/rl-agents <https://github.com/eleure
 
 .. code-block:: bash
 
-  cd <path/to/rl-agents/scripts>
-  python experiments.py evaluate configs/IntersectionEnv/env_multi_agent.json \
-                                 configs/IntersectionEnv/agents/DQNAgent/ego_attention_2h.json \
-                                 --train --episodes=3000
+  # cd <path/to/rl-agents/scripts>
+  # python experiments.py evaluate configs/IntersectionEnv/env_multi_agent.json \
+                                 # configs/IntersectionEnv/agents/DQNAgent/ego_attention_2h.json \
+                                 # --train --episodes=3000
 
 .. figure:: https://raw.githubusercontent.com/eleurent/highway-env/gh-media/docs/media/intersection_multi_agent.gif
 

@@ -66,7 +66,7 @@ and import it from ``highway_env/envs/__init__.py``:
 
 .. code-block:: python
 
-    from highway_env.envs.your_env import *
+    #from highway_env.envs.your_env import *
 
 
 Profit
@@ -76,13 +76,13 @@ You should now be able to run the environment:
 
 .. code-block:: python
 
-    import gym
-    import highway_env
+    #import gym
+    #import highway_env
 
-    env = gym.make('your-env-v0')
-    obs = env.reset()
-    obs, reward, done, info = env.step(env.action_space.sample())
-    env.render()
+    #env = gym.make('your-env-v0')
+    #obs = env.reset()
+    #obs, reward, done, info = env.step(env.action_space.sample())
+    #env.render()
 
 API
 -------
