@@ -31,7 +31,9 @@
 Welcome to `correlatedpy <https://github.com/oboufous/correlatedpy>`_'s documentation!
 ====================================================================================
 
-This is a Python library used for distributed learning of a correlated equilibrium in multiplayer strategic form games.
+This is a Python library used for learning of a correlated equilibrium in multiplayer strategic form games.
+
+The algorithm allows players in a multiagent system to reach an equilibrium in a distributed fashion. 
 
 The purpose of this documentation is to provide:
 
