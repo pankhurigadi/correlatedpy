@@ -8,7 +8,19 @@ Prerequisites
 
 This project requires python3 (>=3.5)
 
-The graphics require the installation of `pygame <https://www.pygame.org/news>`_, which itself has dependencies that must be installed manually.
+The algorithm requires the installation of libraries such as `quantecon <https://pypi.org/project/quantecon/>`_, which itself has dependencies that must be installed manually.
+
+The following python packages are needed to run the program 
+* [matplotlib](https://pypi.org/project/matplotlib/)
+* [nashpy](https://pypi.org/project/nashpy/)
+* [numpy](https://pypi.org/project/numpy/)
+* [tqdm](https://pypi.org/project/tqdm/)
+* [quantecon](https://pypi.org/project/qe/)
+
+These can all be installed with pip, e.g.,  
+```sh
+  pip install nashpy
+  ```
 
 
 Ubuntu
