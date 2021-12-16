@@ -4,28 +4,27 @@
 Getting Started
 ===============
 
-Making an environment
+Making an game
 ------------------------
 
 Here is a quick example of how to create an environment:
 
 .. jupyter-execute::
 
-  # import gym
-  # import highway_env
-  # from matplotlib import pyplot as plt
-  # %matplotlib inline
+  import numpy as np
+  import correlatedpy
+  from matplotlib import pyplot as plt
+  %matplotlib inline
 
-  # env = gym.make('highway-v0')
-  # env.reset()
-  # for _ in range(3):
-      # action = env.action_type.actions_indexes["IDLE"]
-      # obs, reward, done, info = env.step(action)
-      # env.render()
+  payoff_matrix = np.array([[[0,0], [7,2]],
+                            [[2,7], [6,6]]])
 
-  # plt.imshow(env.render(mode="rgb_array"))
-  # plt.show()
-
+  epsilon = 0.001 #perturbation
+  beta = 0.02 #target approximate correlated equilibrium
+  
+  correlatedpy(epsilon, beta, payoff_matrix)
+  
+  
 All the environments
 ~~~~~~~~~~~~~~~~~~~~
 Here is the list of all the environments available and their descriptions:
