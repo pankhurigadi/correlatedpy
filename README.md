@@ -66,32 +66,14 @@ See the [documentation](https://correlatedpy.readthedocs.io/en/latest/quickstart
 
 ### [Chicken Game](https://en.wikipedia.org/wiki/Chicken_(game))
 
+
+<div align="center">
+
 Attempt | #1 | #2 | #3 
 --- | --- | --- | ---
 Seconds | 301 | 283 | 290 
 
-
-<div align="center">
-
-| Tables   |      Are      |  Cool |
-|----------|:-------------:|------:|
-| col 1 is |  left-aligned | $1600 |
-| col 2 is |    centered   |   $12 |
-| col 3 is | right-aligned |    $1 |
-
 </div>
-
-
-<center>
-
-| Tables   |      Are      |  Cool |
-|----------|:-------------:|------:|
-| col 1 is |  left-aligned | $1600 |
-| col 2 is |    centered   |   $12 |
-| col 3 is | right-aligned |    $1 |
-
-</center>
-
 
 <p align="center">
     <img src="https://raw.githubusercontent.com/eleurent/highway-env/master/../gh-media/docs/media/ddpg.gif?raw=true"><br/>
