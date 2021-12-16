@@ -11,19 +11,19 @@ more about the service here: https://readthedocs.org
 .. <!--alex enable hostesses-hosts-->
 
 The documentation contained in :code:`docs/` is automatically built and can be
-viewed at https://nashpy.readthedocs.io/en/stable/.
+viewed at https://correlatedpy.readthedocs.io/en/stable/.
 
 Settings
 --------
 
 Read the docs allows you to configure your build using a :code:`readthedocs.yml`
-file. This is not currently used by Nashpy.
+file. This is not currently used by Correlatedpy.
 
-The default version (ie when going to https://nashpy.readthedocs.io/) is the
+The default version (ie when going to https://correlatedpy.readthedocs.io/) is the
 :code:`stable` version which means the last release.
 
 You can view the version of the documentation currently on the :code:`main`
-branch by going to: https://nashpy.readthedocs.io/latest.
+branch by going to: https://correlatedpy.readthedocs.io/latest.
 
 Configuration file
 ------------------
@@ -32,7 +32,7 @@ Read the docs can have specific settings set in a :code:`.readthedocs.yml` file.
 Details on this can be found here:
 https://docs.readthedocs.io/en/stable/config-file/v2.html#packages
 
-One specific setting used by Nashpy is::
+One specific setting used by Correlatedpy is::
 
     python:
        version: 3.8
