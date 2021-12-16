@@ -7,22 +7,25 @@ Getting Started
 Making an game
 ------------------------
 
-Here is a quick example of how to create an environment:
+Here is a quick example of how to create a game:
 
 .. jupyter-execute::
 
-  import numpy as np
-  import correlatedpy
-  from matplotlib import pyplot as plt
-  %matplotlib inline
+  #import gym
+  #import highway_env
+  #from matplotlib import pyplot as plt
+  #%matplotlib inline
 
-  payoff_matrix = np.array([[[0,0], [7,2]],
-                            [[2,7], [6,6]]])
+  #env = gym.make('highway-v0')
+  #env.reset()
+  #for _ in range(3):
+  #    action = env.action_type.actions_indexes["IDLE"]
+  #    obs, reward, done, info = env.step(action)
+  #    env.render()
 
-  epsilon = 0.001 #perturbation
-  beta = 0.02 #target approximate correlated equilibrium
-    
-  
+  #plt.imshow(env.render(mode="rgb_array"))
+  #plt.show()
+
 All the environments
 ~~~~~~~~~~~~~~~~~~~~
 Here is the list of all the environments available and their descriptions:
@@ -50,19 +53,19 @@ After environment creation, the configuration can be accessed using the
 
 .. jupyter-execute::
 
-  # import pprint
+  #import pprint
 
-  # env = gym.make("highway-v0")
-  # pprint.pprint(env.config)
+  #env = gym.make("highway-v0")
+  #pprint.pprint(env.config)
 
-# For example, the number of lanes can be changed with:
+For example, the number of lanes can be changed with:
 
-# .. jupyter-execute::
+.. jupyter-execute::
 
-  # env.config["lanes_count"] = 2
-  # env.reset()
-  # plt.imshow(env.render(mode="rgb_array"))
-  # plt.show()
+  #env.config["lanes_count"] = 2
+  #env.reset()
+  #plt.imshow(env.render(mode="rgb_array"))
+  #plt.show()
 
 .. note::
 
@@ -85,35 +88,35 @@ Here is an example of SB3's DQN implementation trained on ``highway-fast-v0`` wi
 
 .. code-block:: python
 
-  # import gym
-  # import highway_env
-  # from stable_baselines3 import DQN
+  #import gym
+  #import highway_env
+  #from stable_baselines3 import DQN
 
-  # env = gym.make("highway-fast-v0")
-  # model = DQN('MlpPolicy', env,
-                # policy_kwargs=dict(net_arch=[256, 256]),
-                # learning_rate=5e-4,
-                # buffer_size=15000,
-                # learning_starts=200,
-                # batch_size=32,
-                # gamma=0.8,
-                # train_freq=1,
-                # gradient_steps=1,
-                # target_update_interval=50,
-                # verbose=1,
-                # tensorboard_log="highway_dqn/")
-  # model.learn(int(2e4))
-  # model.save("highway_dqn/model")
+  #env = gym.make("highway-fast-v0")
+  #model = DQN('MlpPolicy', env,
+  #              policy_kwargs=dict(net_arch=[256, 256]),
+  #              learning_rate=5e-4,
+  #              buffer_size=15000,
+  #              learning_starts=200,
+  #              batch_size=32,
+  #              gamma=0.8,
+  #              train_freq=1,
+  #              gradient_steps=1,
+  #              target_update_interval=50,
+  #              verbose=1,
+  #              tensorboard_log="highway_dqn/")
+  #model.learn(int(2e4))
+  #model.save("highway_dqn/model")
 
-  # # Load and test saved model
-  # model = DQN.load("highway_dqn/model")
-  # while True:
-    # done = False
-    # obs = env.reset()
-    # while not done:
-      # action, _states = model.predict(obs, deterministic=True)
-      # obs, reward, done, info = env.step(action)
-      # env.render()
+  # Load and test saved model
+  #model = DQN.load("highway_dqn/model")
+  #while True:
+  #  done = False
+  #  obs = env.reset()
+  #  while not done:
+  #    action, _states = model.predict(obs, deterministic=True)
+  #    obs, reward, done, info = env.step(action)
+  #    env.render()
 
 A full run takes about 25mn on my laptop (fps=14). The following results are obtained:
 
