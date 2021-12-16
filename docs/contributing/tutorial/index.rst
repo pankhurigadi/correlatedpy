@@ -172,12 +172,12 @@ of the source code on Github::
 Opening a Pull Request
 ----------------------
 
-You now have 2 copies of the modified source code of Nashpy. One locally on your
+You now have 2 copies of the modified source code of Correlatedpy. One locally on your
 computer, the other under your Github account. In order to include those changes
-in to the main source code of Nashpy you will open a Pull request.
+in to the main source code of Correlatedpy you will open a Pull request.
 
-To do this, go to your fork of the Nashpy repository:
-:code:`https://github.com/<your username>/Nashpy`. You should see a
+To do this, go to your fork of the Correlatedpy repository:
+:code:`https://github.com/<your username>/correlatedpy`. You should see a
 :code:`Compare and Pull Request` button:
 
 .. image:: /_static/contributing/tutorial/before_pr/main.png
@@ -217,4 +217,4 @@ pull request::
 
 This final process of making further modifications might repeat itself and
 eventually the Pull Request will be **merged** and your changes included in the
-main version of the Nashpy source code.
+main version of the Correlatedpy source code.
