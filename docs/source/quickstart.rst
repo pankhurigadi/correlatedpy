@@ -21,9 +21,7 @@ Here is a quick example of how to create an environment:
 
   epsilon = 0.001 #perturbation
   beta = 0.02 #target approximate correlated equilibrium
-  
-  #correlatedpy(epsilon, beta, payoff_matrix)
-  
+    
   
 All the environments
 ~~~~~~~~~~~~~~~~~~~~
