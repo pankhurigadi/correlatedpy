@@ -17,9 +17,9 @@ The library implements a distributed learning algorithm allowing players to conv
 * [qe](https://pypi.org/project/qe/)
 
 
-## The environments
+## The Environment
 
-### Highway
+### Players
 
 ```python
 env = gym.make("highway-v0")
@@ -30,7 +30,7 @@ The agent's objective is to reach a high speed while avoiding collisions with ne
 
 A faster variant, `highway-fast-v0` is also available, with a degraded simulation accuracy to improve speed for large-scale training.
 
-### Merge
+### Game
 
 ```python
 env = gym.make("merge-v0")
@@ -38,40 +38,7 @@ env = gym.make("merge-v0")
 
 In this task, the ego-vehicle starts on a main highway but soon approaches a road junction with incoming vehicles on the access ramp. The agent's objective is now to maintain a high speed while making room for the vehicles so that they can safely merge in the traffic.
 
-### Roundabout
-
-```python
-env = gym.make("roundabout-v0")
-```
-
-In this task, the ego-vehicle if approaching a roundabout with flowing traffic. It will follow its planned route automatically, but has to handle lane changes and longitudinal control to pass the roundabout as fast as possible while avoiding collisions.
-
-### Parking
-
-```python
-env = gym.make("parking-v0")
-```
-
-A goal-conditioned continuous control task in which the ego-vehicle must park in a given space with the appropriate heading.
-
-
-### Intersection
-
-```python
-env = gym.make("intersection-v0")
-```
-
-An intersection negotiation task with dense traffic.
-
-### Racetrack
-
-```python
-env = gym.make("racetrack-v0")
-```
-
-A continuous control task involving lane-keeping and obstacle avoidance.
-
-## Examples of agents
+## Examples of Games
 
 Agents solving the `highway-env` environments are available in the [eleurent/rl-agents](https://github.com/eleurent/rl-agents) and [DLR-RM/stable-baselines3](https://github.com/DLR-RM/stable-baselines3) repositories.
 
