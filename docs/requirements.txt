@@ -1,6 +1,5 @@
 numpy
 matplotlib
-math
 quantecon # for computing the stationary distributions of a markov matrix
 scipy
 
