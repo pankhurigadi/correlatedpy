@@ -28,7 +28,7 @@
 
 |Build Status| |Documentation Status| |Downloads| |Codacy Status| |Coverage Status| |Contributors| |Environments|
 
-Welcome to `highway-env <https://github.com/oboufous/correlatedpy>`_'s documentation!
+Welcome to `correlatedpy <https://github.com/oboufous/correlatedpy>`_'s documentation!
 ====================================================================================
 
 This project gathers a collection of environment for *decision-making* in Autonomous Driving.

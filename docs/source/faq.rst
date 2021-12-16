@@ -5,7 +5,7 @@ Frequently Asked Questions
 =============================
 
 
-This is a list of Frequently Asked Questions about highway-env.  Feel free to
+This is a list of Frequently Asked Questions about correlatedpy.  Feel free to
 suggest new entries!
 
 I try to train an agent using the Kinematics Observation and an MLP model, but the resulting policy is not optimal. Why?
