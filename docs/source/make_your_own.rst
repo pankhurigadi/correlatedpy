@@ -1,6 +1,6 @@
 .. _make_your_own:
 
-Make your own environment
+Make your own game
 ==========================
 
 Here are the steps required to create a new game.
