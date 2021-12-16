@@ -5,23 +5,17 @@ Frequently Asked Questions
 =============================
 
 
-This is a list of Frequently Asked Questions about correlatedpy.  Feel free to
-suggest new entries!
+This is a list of Frequently Asked Questions about correlatedpy. Feel free to suggest new entries!
 
-I try to train an agent using the Kinematics Observation and an MLP model, but the resulting policy is not optimal. Why?
-    I also tend to get reasonable but sub-optimal policies using this observation-model pair.
-    In :cite:`Leurent2019social`, we argued that a possible reason is that the MLP output depends on the order of
-    vehicles in the observation. Indeed, if the agent revisits a given scene but observes vehicles described in a different
-    order, it will see it as a novel state and will not be able to reuse past information. Thus, the agent struggles to
-    make use of its observation.
-
+My algorithm does not converge. Why?
+    The convergence of the algorithm is guaranteed (see proof in the author's paper). Indeed, for any game you define, there exist at least a correlated equilibrium point, and the expected behaviour of the algorithm is to converege towards it.
+    In :cite:`Leurent2019social`, we argued that a possible reason could either be a high exploration rate that does not allow the algorithm to remain at the equilibrium long enough, or a small time horizon. Indeed, a suffcient number of game roubds must be played in order to reach a steady state regime.
     This can be addressed in two ways:
 
-    * - Change the *model*, to use a permutation-invariant architecture which will not be sensitive to the vehicles order, such as *e.g.* :cite:`Qi2017pointnet` or :cite:`Leurent2019social`.
+    * - Decrease the exploration rate *epsilon*, to use a small perturbation, see *e.g.* :cite:`Qi2017pointnet` or :cite:`Leurent2019social` for examples.
     This example is implemented `here (DQN) <https://colab.research.google.com/github/eleurent/highway-env/blob/master/scripts/intersection_social_dqn.ipynb>`_ or `here (SB3's PPO) <https://github.com/eleurent/highway-env/blob/master/scripts/sb3_highway_ppo_transformer.py>`_.
 
-    * - Change the *observation*. For example, the :ref:`Grayscale Image` does not depend on an ordering. In this case, a CNN model is more suitable than an MLP model.
-    This example is implemented `here (SB3's DQN) <https://github.com/eleurent/highway-env/blob/master/scripts/sb3_highway_dqn_cnn.py>`_.
+    * - Increase the time horizon or number of iterations. A rule of thumb is to play no less than .
 
 
 My videos are too fast / have a low framerate.
