@@ -3,7 +3,7 @@
 Make your own environment
 ==========================
 
-Here are the steps required to create a new environment.
+Here are the steps required to create a new game.
 
 .. note::
     Pull requests are welcome!
@@ -11,24 +11,23 @@ Here are the steps required to create a new environment.
 Set up files
 ------------
 
-1. Create a new ``your_env.py`` file in ``highway_env/envs/``
-2. Define a class YourEnv, that must inherit from :py:class:`~highway_env.envs.common.abstract.AbstractEnv`
+1. Create a new ``your_game.py`` file in ``correlatedpy/games/``
+2. Define a class YourGame, that must inherit from :py:class:`~correlatedpy.games.common.abstract.AbstractEnv`
 
 This class provides several useful functions:
 
-* A :py:meth:`~highway_env.envs.common.abstract.AbstractEnv.default_config` method, that provides a default configuration dictionary that can be overloaded.
-* A :py:meth:`~highway_env.envs.common.abstract.AbstractEnv.define_spaces` method, that gives access to a choice of observation and action types, set from the environment configuration
-* A :py:meth:`~highway_env.envs.common.abstract.AbstractEnv.step` method, which executes the desired actions (at policy frequency) and simulate the environment (at simulation frequency)
-* A :py:meth:`~highway_env.envs.common.abstract.AbstractEnv.render` method, which renders the environment.
+* A :py:meth:`~correlatedpy.envs.common.abstract.AbstractEnv.default_config` method, that provides a default configuration dictionary that can be overloaded.
+* A :py:meth:`~correlatedpy.envs.common.abstract.AbstractEnv.define_spaces` method, that gives access to a choice of observation and action types, set from the game configuration
+* A :py:meth:`~correlatedpy.envs.common.abstract.AbstractEnv.step` method, which executes the desired actions (at policy frequency) and simulate the environment (at simulation frequency)
+* A :py:meth:`~correlatedpy.envs.common.abstract.AbstractEnv.render` method, which renders the game.
 
-Create the scene
+Create the Players
 ------------------
 
-The first step is to create a :py:class:`~highway_env.road.road.RoadNetwork` that describes the geometry and topology of
-roads and lanes in the scene.
-This should be achieved in a ``YourEnv._make_road()`` method, called from ``YourEnv.reset()`` to set the ``self.road`` field.
+The first step is to create a :py:class:`~correlatedpy.player.player.Player` that describes the players in the game.
+This should be achieved in a ``YourGame._make_player()`` method, called from ``YourGame.reset()`` to set the ``self.Player`` field.
 
-See :ref:`Roads <road_road>` for reference, and existing environments as examples.
+See :ref:`Players <player_player>` for reference, and existing games as examples.
 
 Create the vehicles
 ------------------
@@ -42,7 +41,7 @@ Other vehicles can be created more freely, and added to the ``self.road.vehicles
 
 See :ref:`vehicle behaviors <vehicle_behavior>` for reference, and existing environments as examples.
 
-Make the environment configurable
+Make the game configurable
 ------------------------------------
 
 To make a part of your environment configurable, overload the :py:meth:`~highway_env.envs.common.abstract.AbstractEnv.default_config`
@@ -50,23 +49,23 @@ method to define new ``{"config_key": value}`` pairs with default values. These 
 environment implementation with ``self.config["config_key"]``, and once the environment is created, it can be configured with
 ``env.configure({"config_key": other_value})`` followed by ``env.reset()``.
 
-Register the environment
+Register the game
 ---------------------------
 
-In ``highway_env/envs/your_env.py``, add the following line:
+In ``correlatepy/games/your_game.py``, add the following line:
 
 .. code-block:: python
 
-    register(
-        id='your-env-v0',
-        entry_point='highway_env.envs:YourEnv',
+    #register(
+        id='your-game-v0',
+        entry_point='correlatedpy.games:YourGame',
     )
 
-and import it from ``highway_env/envs/__init__.py``:
+and import it from ``correlatedpy/games/__init__.py``:
 
 .. code-block:: python
 
-    #from highway_env.envs.your_env import *
+    #from correlatedpy.games.your_game import *
 
 
 Profit
