@@ -76,7 +76,7 @@ with your Github username)::
     List of contributors
     --------------------
 
-    - `@drvinceknight <https://github.com/drvinceknight>`_
+    - `@oboufous <https://github.com/oboufous>`_
     - `@<your username> <https://github.com/<your username>`_
 
 Checking the modification
