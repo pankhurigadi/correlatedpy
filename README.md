@@ -51,7 +51,7 @@ After creating players, we can now instanciate a game, define how many rounds to
 ```python
 T = 100000
 
-G = Game(T, history, gamma = 1, epsilon = 0.02, alpha=0.01)
+G = Game(iterations = 100000, history = [(0, 0)], gamma = 1, epsilon = 0.02, alpha=0.01)
 
 G.add_player(P1)
 G.add_player(P2)
