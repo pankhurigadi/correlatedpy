@@ -8,7 +8,7 @@
 
 # Correlatedpy: a python library for distributed learning of correlated equilibrium in multiplayer strategic games.
 
-The library implements a distributed learning algorithm allowing players to converge towards a equilibrium point. 
+The library implements a distributed learning algorithm allowing players to converge towards a correlated equilibrium point. 
 
 **Correlatedpy** has a small set of Python dependencies. It is straightforward to install on all operating systems as it only requires the following python packages
 
