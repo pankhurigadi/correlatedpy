@@ -10,7 +10,8 @@ This project requires python3 (>=3.5)
 
 The algorithm requires the installation of libraries such as `quantecon <https://pypi.org/project/quantecon/>`_, which itself has dependencies that must be installed manually.
 
-The following python packages are needed to run the program 
+The following python packages are needed to run the program
+
 * [matplotlib](https://pypi.org/project/matplotlib/)
 
 * [nashpy](https://pypi.org/project/nashpy/)
@@ -21,11 +22,12 @@ The following python packages are needed to run the program
 
 * [quantecon](https://pypi.org/project/qe/)
 
-These can all be installed with pip, e.g.,  
-```sh
-  pip install nashpy
-  ```
+These can all be installed with pip, e.g.,
 
+.. code-block:: bash
+
+    pip install nashpy
+    
 
 Ubuntu
 ~~~~~~
