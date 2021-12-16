@@ -19,11 +19,11 @@
 .. |Coverage Status| image:: https://codecov.io/gh/eleurent/highway-env/branch/master/graph/badge.svg
   :target: https://codecov.io/gh/eleurent/highway-env
 
-.. |Contributors| image:: https://img.shields.io/github/contributors/eleurent/highway-env
-  :target: https://github.com/eleurent/highway-env/graphs/contributors
+.. |Contributors| image:: https://img.shields.io/github/contributors/oboufous/correlatedpy
+  :target: https://github.com/oboufous/correlatedpy/graphs/contributors
 
-.. |Environments| image:: https://img.shields.io/github/search/eleurent/highway-env/import%20filename:*_env%20path:highway_env/envs?label=environments
-  :target: https://highway-env.readthedocs.io/en/latest/quickstart.html#all-the-environments
+.. |Environments| image:: https://img.shields.io/github/search/oboufous/correlatedpy/import%20filename:*_env%20path:correlated/env?label=environments
+  :target: https://correlatedpy.readthedocs.io/en/latest/quickstart.html#all-the-environments
 
 
 |Build Status| |Documentation Status| |Downloads| |Codacy Status| |Coverage Status| |Contributors| |Environments|
