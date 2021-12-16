@@ -15,11 +15,7 @@ My algorithm does not converge. Why?
     - Decrease the exploration rate *epsilon*, to use a small perturbation, see *e.g.* :cite:`Qi2017pointnet` or :cite:`Leurent2019social` for examples.
     This example is implemented `here (DQN) <https://colab.research.google.com/github/eleurent/highway-env/blob/master/scripts/intersection_social_dqn.ipynb>`_ or `here (SB3's PPO) <https://github.com/eleurent/highway-env/blob/master/scripts/sb3_highway_ppo_transformer.py>`_.
 
-    - Increase the time horizon or number of iterations. A rule of thumb is to play no less than .
-    
-.. math::
-
-   \frac{ \sum_{t=0}^{N}f(t,k) }{N}
+    - Increase the time horizon or number of iterations. A rule of thumb is to play no less than :math:`\frac{ \sum_{t=0}^{N}f(t,k) }{N}`.
 
 My videos are too fast / have a low framerate.
     This is because in openai/gym, a single video frame is generated at each call of ``env.step(action)``. However, in highway-env, the policy typically runs at a low-level frequency (e.g. 1 Hz) so that a long action (*e.g.* change lane) actually corresponds to several (typically, 15) simulation frames.
