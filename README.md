@@ -46,12 +46,16 @@ A faster variant, `highway-fast-v0` is also available, with a degraded simulatio
 
 ### Game
 
-After creating players, we can now instanciate a game and define how many rounds to play.
+After creating players, we can now instanciate a game, define how many rounds to play, and add the players to it.
 
 ```python
 T = 100000
 
 G = Game(T, history, gamma = 1, epsilon = 0.02, alpha=0.01)
+
+G.add_player(P1)
+G.add_player(P2)
+
 ```
 
 In this task, the ego-vehicle starts on a main highway but soon approaches a road junction with incoming vehicles on the access ramp. The agent's objective is now to maintain a high speed while making room for the vehicles so that they can safely merge in the traffic.
