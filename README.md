@@ -66,6 +66,10 @@ See the [documentation](https://correlatedpy.readthedocs.io/en/latest/quickstart
 
 ### [Chicken Game](https://en.wikipedia.org/wiki/Chicken_(game))
 
+Attempt | #1 | #2 | #3 | #4 | #5 | #6 | #7 | #8 | #9 | #10 | #11
+--- | --- | --- | --- |--- |--- |--- |--- |--- |--- |--- |---
+Seconds | 301 | 283 | 290 | 286 | 289 | 285 | 287 | 287 | 272 | 276 | 269
+
 <p align="center">
     <img src="https://raw.githubusercontent.com/eleurent/highway-env/master/../gh-media/docs/media/ddpg.gif?raw=true"><br/>
     <em>The DDPG agent solving parking-v0.</em>
