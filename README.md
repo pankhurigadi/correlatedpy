@@ -69,9 +69,10 @@ See the [documentation](https://correlatedpy.readthedocs.io/en/latest/quickstart
 
 <div align="center">
 
-Attempt | #1 | #2 | #3 
---- | --- | --- | ---
-Seconds | 301 | 283 | 290 
+ | #C | #D  
+--- | --- | --- 
+C | 301 | 283 
+D | 301 | 283 
 
 </div>
 
