@@ -1,10 +1,8 @@
 numpy
 matplotlib
-random
 math
 quantecon # for computing the stationary distributions of a markov matrix
 scipy
-pygments==2.4.1
 
 
 # =========
