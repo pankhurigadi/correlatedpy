@@ -27,9 +27,9 @@ os.environ['PYTHONPATH'] = ':'.join(filter(None, (package_path, os.environ.get('
 
 # -- Project information -----------------------------------------------------
 
-project = 'highway-env'
-copyright = '2018, Edouard Leurent'
-author = 'Edouard Leurent'
+project = 'correlatedpy'
+copyright = '2021, Omar Boufous'
+author = 'Omar Boufous'
 
 # The short X.Y version
 version = ''
@@ -146,8 +146,8 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-    (master_doc, 'highway-env.tex', 'highway-env Documentation',
-     'Edouard Leurent', 'manual'),
+    (master_doc, 'correlatedpy.tex', 'correlatedpy Documentation',
+     'Omar Boufous', 'manual'),
 ]
 
 
@@ -156,7 +156,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    (master_doc, 'highway-env', 'highway-env Documentation',
+    (master_doc, 'correlatedpy', 'correlatedpy Documentation',
      [author], 1)
 ]
 
@@ -167,8 +167,8 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-    (master_doc, 'highway-env', 'highway-env Documentation',
-     author, 'highway-env', 'One line description of project.',
+    (master_doc, 'correlatedpy', 'correlatedpy Documentation',
+     author, 'correlatedpy', 'One line description of project.',
      'Miscellaneous'),
 ]
 
