@@ -31,11 +31,11 @@
 Welcome to `correlatedpy <https://github.com/oboufous/correlatedpy>`_'s documentation!
 ====================================================================================
 
-This project gathers a collection of environment for *decision-making* in Autonomous Driving.
+This is a Python library used for distributed learning of a correlated equilibrium in multiplayer strategic form games.
 
 The purpose of this documentation is to provide:
 
-1. a :ref:`quick start guide <quickstart>` describing the environments and their customization options;
+1. a :ref:`quick start guide <quickstart>` describing the environment and the customization options;
 2. a :ref:`detailed description <user_guide>` of the nuts and bolts of the project, and how *you* can contribute.
 
 .. _index_how_to_cite_this_work:
