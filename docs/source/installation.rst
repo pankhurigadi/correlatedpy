@@ -12,15 +12,15 @@ The algorithm requires the installation of libraries such as `quantecon <https:/
 
 The following python packages are needed to run the program
 
-* _`matplotlib <https://pypi.org/project/matplotlib/)
+*  `matplotlib <https://pypi.org/project/matplotlib/>`_
 
-* _`nashpy <https://pypi.org/project/nashpy/>`_
+*  `nashpy <https://pypi.org/project/nashpy/>`_
 
-* _`numpy <https://pypi.org/project/numpy/>`_
+*  `numpy <https://pypi.org/project/numpy/>`_
 
-* _`tqdm <https://pypi.org/project/tqdm/>`_
+*  `tqdm <https://pypi.org/project/tqdm/>`_
 
-* _`quantecon <https://pypi.org/project/qe/>`_
+*  `quantecon <https://pypi.org/project/quantecon/>`_
 
 These can all be installed with pip, e.g.,
 
