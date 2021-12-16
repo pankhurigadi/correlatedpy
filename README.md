@@ -69,10 +69,10 @@ See the [documentation](https://correlatedpy.readthedocs.io/en/latest/quickstart
 
 <div align="center">
 
-Attempt | #C | #D  
+Attempt | <b>C</b> | <b>D</b>  
 --- | --- | --- 
-C | 301 | 283 
-D | 301 | 283 
+<b>C</b> | 301 | 283 
+<b>D</b> | 301 | 283 
 
 </div>
 
