@@ -68,10 +68,12 @@ See the [documentation](https://correlatedpy.readthedocs.io/en/latest/quickstart
 
 
 <div align="center">
+    
 &nbsp; | <b>D</b> | <b>C</b>  
 --- | --- | --- 
 <b>D</b> | 0,0 | 7,2 
 <b>C</b> | 2,7 | 6,6 
+
 </div>
 
 <p align="center">
