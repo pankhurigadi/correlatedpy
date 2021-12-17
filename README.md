@@ -13,9 +13,6 @@
 <br />
   <p align="center">
     <br />
-    <a href="https://github.com/oboufous/correlatedpy"><strong>Explore the docs »</strong></a>
-    <br />
-    <br />
     <a href="https://github.com/oboufous/correlatedpy">View Demo</a>
     ·
     <a href="https://github.com/oboufous/correlatedpy/issues">Report Bug</a>
