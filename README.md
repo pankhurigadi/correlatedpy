@@ -104,6 +104,25 @@ This model-free value-based reinforcement learning agent performs Q-learning wit
 This model-free policy-based reinforcement learning agent is optimized directly by gradient ascent. It uses Hindsight Experience Replay to efficiently learn how to solve a goal-conditioned task.
 
 
+### [A 3x2 game]
+
+<div align="center">
+    
+&nbsp; | <b>X</b> | <b>Y</b>   
+--- | --- | --- 
+<b>A</b> | 2,29 | 16,7 
+<b>B</b> | 4,7 | 6,13 
+<b>C</b> | 4,4 | 6,6
+
+</div>
+
+<p align="center">
+    <img src="https://raw.githubusercontent.com/eleurent/highway-env/master/../gh-media/docs/media/ddpg.gif?raw=true"><br/>
+    <em>The DDPG agent solving parking-v0.</em>
+</p>
+
+This model-free policy-based reinforcement learning agent is optimized directly by gradient ascent. It uses Hindsight Experience Replay to efficiently learn how to solve a goal-conditioned task.
+
 ## Installation
 
 ```bash
