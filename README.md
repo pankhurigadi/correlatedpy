@@ -89,7 +89,7 @@ This model-free value-based reinforcement learning agent performs Q-learning wit
 <div align="center">
     
 &nbsp; | <b>R</b> | <b>P</b> | <b>S</b>  
---- | --- | --- 
+--- | --- | --- | --- 
 <b>R</b> | 0,0 | -1,1 | 1,-1
 <b>P</b> | 1,-1 | 0,0 | -1,1
 <b>S</b> | -1,1 | 1,-1 | 0,0
