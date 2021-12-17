@@ -20,6 +20,15 @@
 </p>
 
 
+The library implements a distributed learning algorithm allowing players to converge towards a correlated equilibrium point. 
+
+**Correlatedpy** has a small set of Python dependencies. It is straightforward to install on all operating systems as it only requires the following python packages
+
+* [matplotlib](https://pypi.org/project/matplotlib/)
+* [numpy](https://pypi.org/project/numpy/)
+* [qe](https://pypi.org/project/qe/)
+<br />
+
 <!-- TABLE OF CONTENTS -->
 <details open="open">
   <summary>Table of Contents</summary>
@@ -44,15 +53,6 @@
     <li><a href="#acknowledgements">Acknowledgements</a></li>
   </ol>
 </details>
-
-
-The library implements a distributed learning algorithm allowing players to converge towards a correlated equilibrium point. 
-
-**Correlatedpy** has a small set of Python dependencies. It is straightforward to install on all operating systems as it only requires the following python packages
-
-* [matplotlib](https://pypi.org/project/matplotlib/)
-* [numpy](https://pypi.org/project/numpy/)
-* [qe](https://pypi.org/project/qe/)
 
 
 ## The Environment
