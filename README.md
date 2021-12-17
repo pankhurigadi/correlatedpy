@@ -13,14 +13,14 @@
 <br />
   <p align="center">
     <br />
-    <a href="https://github.com/omar-bfs/Blackwell-Strategy"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/oboufous/correlatedpy"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/omar-bfs/Blackwell-Strategy">View Demo</a>
+    <a href="https://github.com/oboufous/correlatedpy">View Demo</a>
     ·
-    <a href="https://github.com/omar-bfs/Blackwell-Strategy/issues">Report Bug</a>
+    <a href="https://github.com/oboufous/correlatedpy/issues">Report Bug</a>
     ·
-    <a href="https://github.com/omar-bfs/Blackwell-Strategy/issues">Request Feature</a>
+    <a href="https://github.com/oboufous/correlatedpy/issues">Request Feature</a>
   </p>
 </p>
 
@@ -38,7 +38,7 @@
     <li>
       <a href="#getting-started">Getting Started</a>
       <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
+        <li><a href="#prerequisites">The Environment</a></li>
         <li><a href="#installation">Execution</a></li>
       </ul>
     </li>
