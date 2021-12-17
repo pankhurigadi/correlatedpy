@@ -22,13 +22,24 @@
 
 The library implements a distributed learning algorithm allowing players to converge towards a correlated equilibrium point. 
 
+
+## Installation
+
 **Correlatedpy** has a small set of Python dependencies. It is straightforward to install on all operating systems as it only requires the following python packages
 
 * [matplotlib](https://pypi.org/project/matplotlib/)
 * [numpy](https://pypi.org/project/numpy/)
 * [qe](https://pypi.org/project/qe/)
-<br />
 
+```bash
+$ python -m pip install correlatedpy
+```
+
+To install Correlatepy on Fedora, use:
+
+```sh
+$ dnf install python3-correlatepy
+```
 
 ## The Environment
 
@@ -127,17 +138,6 @@ This model-free policy-based reinforcement learning agent is optimized directly 
 
 This model-free policy-based reinforcement learning agent is optimized directly by gradient ascent. It uses Hindsight Experience Replay to efficiently learn how to solve a goal-conditioned task.
 
-## Installation
-
-```bash
-$ python -m pip install correlatedpy
-```
-
-To install Correlatepy on Fedora, use:
-
-```sh
-$ dnf install python3-correlatepy
-```
 
 ## Usage
 
