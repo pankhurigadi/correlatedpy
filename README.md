@@ -11,7 +11,6 @@
 
 
   <p align="center">
-    <br />
     <a href="https://github.com/oboufous/correlatedpy">View Demo</a>
     ·
     <a href="https://github.com/oboufous/correlatedpy/issues">Report Bug</a>
