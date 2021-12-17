@@ -9,12 +9,7 @@
 # Correlatedpy: a python library for distributed learning of correlated equilibrium in multiplayer strategic games.
 
 
-<br />
-  <h3 align="center">Blackwell Strategy</h3>
 
-  <p align="center">
-    Algorithm based on Blackwell's approachability theory used for regret minimization in strategic games
-    <br />
     <a href="https://github.com/omar-bfs/Blackwell-Strategy"><strong>Explore the docs »</strong></a>
     <br />
     <br />
