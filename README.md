@@ -8,6 +8,52 @@
 
 # Correlatedpy: a python library for distributed learning of correlated equilibrium in multiplayer strategic games.
 
+
+<br />
+  <h3 align="center">Blackwell Strategy</h3>
+
+  <p align="center">
+    Algorithm based on Blackwell's approachability theory used for regret minimization in strategic games
+    <br />
+    <a href="https://github.com/omar-bfs/Blackwell-Strategy"><strong>Explore the docs »</strong></a>
+    <br />
+    <br />
+    <a href="https://github.com/omar-bfs/Blackwell-Strategy">View Demo</a>
+    ·
+    <a href="https://github.com/omar-bfs/Blackwell-Strategy/issues">Report Bug</a>
+    ·
+    <a href="https://github.com/omar-bfs/Blackwell-Strategy/issues">Request Feature</a>
+  </p>
+</p>
+
+
+
+<!-- TABLE OF CONTENTS -->
+<details open="open">
+  <summary>Table of Contents</summary>
+  <ol>
+    <li>
+      <a href="#about-the-project">About The Project</a>
+      <ul>
+        <li><a href="#built-with">Built With</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#getting-started">Getting Started</a>
+      <ul>
+        <li><a href="#prerequisites">Prerequisites</a></li>
+        <li><a href="#installation">Execution</a></li>
+      </ul>
+    </li>
+    <li><a href="#usage">Usage</a></li>
+    <li><a href="#contributing">Contributing</a></li>
+    <li><a href="#license">License</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#acknowledgements">Acknowledgements</a></li>
+  </ol>
+</details>
+
+
 The library implements a distributed learning algorithm allowing players to converge towards a correlated equilibrium point. 
 
 **Correlatedpy** has a small set of Python dependencies. It is straightforward to install on all operating systems as it only requires the following python packages
