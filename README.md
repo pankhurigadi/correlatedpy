@@ -104,7 +104,7 @@ This model-free value-based reinforcement learning agent performs Q-learning wit
 This model-free policy-based reinforcement learning agent is optimized directly by gradient ascent. It uses Hindsight Experience Replay to efficiently learn how to solve a goal-conditioned task.
 
 
-### [A 3x2 game]
+### A 3x2 game
 
 <div align="center">
     
