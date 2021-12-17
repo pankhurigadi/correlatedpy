@@ -10,6 +10,10 @@
 
 
 
+<br />
+  <p align="center">
+    Algorithm based on Blackwell's approachability theory used for regret minimization in strategic games
+    <br />
     <a href="https://github.com/omar-bfs/Blackwell-Strategy"><strong>Explore the docs »</strong></a>
     <br />
     <br />
@@ -20,7 +24,6 @@
     <a href="https://github.com/omar-bfs/Blackwell-Strategy/issues">Request Feature</a>
   </p>
 </p>
-
 
 
 <!-- TABLE OF CONTENTS -->
