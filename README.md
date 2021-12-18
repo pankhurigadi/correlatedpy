@@ -154,7 +154,7 @@ We show the empirical distribution of play of each profile.
 
 ### Payoff matrices 
 
-For an n-player game with h<sub>&theta;</sub>(x) = &theta;<sub>o</sub> x + &theta;<sub>1</sub>x Creating the payoff matrices by passing two 2 dimensional arrays/lists:
+For an n-player game with m<sub>i</sub> = &theta;<sub>o</sub> x  Creating the payoff matrices by passing two 2 dimensional arrays/lists:
 
 ```python
 >>> import correlatedpy as correlated
