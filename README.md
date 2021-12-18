@@ -85,13 +85,10 @@ G.add_player(P2)
 
 ### Learning
 
-After creating players, we can now instanciate a game, define how many rounds to play, and add the players to it.
+The game is played repeatedly by calling the instance method _run()_.
 
 ```python
-G = Game(iterations = 100000, history = [(0, 0)], epsilon = 0.02, alpha=0.01)
-
-G.add_player(P1)
-G.add_player(P2)
+G.run()
 
 ```
 
@@ -101,6 +98,7 @@ See the [documentation](https://correlatedpy.readthedocs.io/en/latest/quickstart
 
 ### [Chicken Game](https://en.wikipedia.org/wiki/Chicken_(game))
 
+This game has two pure Nash equilibria and one mixed Nash equilibrium. 
 
 <div align="center">
     
@@ -111,10 +109,12 @@ See the [documentation](https://correlatedpy.readthedocs.io/en/latest/quickstart
 
 </div>
 
-This model-free value-based reinforcement learning agent performs Q-learning with function approximation, using a neural network to represent the state-action value function Q.
+We show the evolution of the probabilities of play of each profile.
+
 
 ### [Rock-Paper-Scissors](https://en.wikipedia.org/wiki/Rock_paper_scissors)
 
+This game has a unique mixed Nash equilibrium point. 
 
 <div align="center">
     
@@ -126,11 +126,12 @@ This model-free value-based reinforcement learning agent performs Q-learning wit
 
 </div>
 
-
-This model-free policy-based reinforcement learning agent is optimized directly by gradient ascent. It uses Hindsight Experience Replay to efficiently learn how to solve a goal-conditioned task.
+The learnign shows the probability of play of each profile. 
 
 
 ### A 3x2 game
+
+This game has two mixed Nash equilibria. 
 
 <div align="center">
     
@@ -140,6 +141,8 @@ This model-free policy-based reinforcement learning agent is optimized directly 
 <b>B</b> | 4,7 | 6,13 
 <b>C</b> | 4,4 | 6,6
 
+We show the proabilty 
+
 </div>
 
 <p align="center">
@@ -147,14 +150,14 @@ This model-free policy-based reinforcement learning agent is optimized directly 
     <em>The DDPG agent solving parking-v0.</em>
 </p>
 
-This model-free policy-based reinforcement learning agent is optimized directly by gradient ascent. It uses Hindsight Experience Replay to efficiently learn how to solve a goal-conditioned task.
-
 
 ## Usage
 
 <!--alex ignore bi-->
 
-Create bi matrix games by passing two 2 dimensional arrays/lists:
+### Payoff matrices 
+
+For an n-player game with $r^2$ Creating the payoff matrices by passing two 2 dimensional arrays/lists:
 
 ```python
 >>> import correlatedpy as correlated
