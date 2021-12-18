@@ -56,39 +56,44 @@ alpha = 0.01 # targetted approximate correlated equilibrium
 ### Players
 the Player class has the attributes we list below:
 
-* f
-* dd
-* eheh
-* ujjbjbjbk
+* number: object instance unique identifier
+* payoff: player's payoff matrix 
+* state: player's state ('syn' or 'asyn')
+* history: game history
+* epsilon: exploration rate
+* alpha: approximate correlated alpha-equilibrium
 
 We can now create the players.
 ```python
 
-P1 = Player(number = 1, actions = [0, 1], payoff = np.array([[0, 0], [1, -1]]), state = 'asyn', history = [(0, 0)], epsilon = 0.02, alpha = 0.01)
-P2 = Player(number = 2, actions = [0, 1], payoff = np.array([[0, 0], [-1, 1]]), state = 'asyn', history = [(0, 0)], epsilon = 0.02, alpha = 0.01)
+P1 = Player(number = 1, payoff = np.array([[0, 0], [1, -1]]), state = 'asyn', history = [(0, 0)], epsilon = 0.02, alpha = 0.01)
+P2 = Player(number = 2, payoff = np.array([[0, 0], [-1, 1]]), state = 'asyn', history = [(0, 0)], epsilon = 0.02, alpha = 0.01)
 
 ```
-
-In this task, the ego-vehicle is driving on a multilane highway populated with other vehicles.
-The agent's objective is to reach a high speed while avoiding collisions with neighbouring vehicles. Driving on the right side of the road is also rewarded.
-
-A faster variant, `highway-fast-v0` is also available, with a degraded simulation accuracy to improve speed for large-scale training.
 
 ### Game
 
 After creating players, we can now instanciate a game, define how many rounds to play, and add the players to it.
 
 ```python
-T = 100000
-
-G = Game(iterations = 100000, history = [(0, 0)], gamma = 1, epsilon = 0.02, alpha=0.01)
+G = Game(iterations = 100000, history = [(0, 0)], epsilon = 0.02, alpha=0.01)
 
 G.add_player(P1)
 G.add_player(P2)
 
 ```
 
-In this task, the ego-vehicle starts on a main highway but soon approaches a road junction with incoming vehicles on the access ramp. The agent's objective is now to maintain a high speed while making room for the vehicles so that they can safely merge in the traffic.
+### Learning
+
+After creating players, we can now instanciate a game, define how many rounds to play, and add the players to it.
+
+```python
+G = Game(iterations = 100000, history = [(0, 0)], epsilon = 0.02, alpha=0.01)
+
+G.add_player(P1)
+G.add_player(P2)
+
+```
 
 ## Examples of Games
 
