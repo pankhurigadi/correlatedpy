@@ -44,22 +44,28 @@ $ dnf install python3-correlatepy
 ## The Environment
 
 ### Parameters
-The game has global parameters that are shared accross all instances of all classes of the game.
+The game has three global parameters that are shared accross all instances of all classes of the game. They can be initialized as follows
 
 ```python
 
-history = [(0,0)]
-gamma = 1
-epsilon = 0.02 
-alpha = 0.01
+history = [(0,0)] # history of action profiles played by players
+epsilon = 0.02 # exploration rate
+alpha = 0.01 # targetted approximate correlated equilibrium
 ```
 
 ### Players
+the Player class has the attributes we list below:
 
+* f
+* dd
+* eheh
+* ujjbjbjbk
+
+We can now create the players.
 ```python
 
-P1 = Player(number = 1, actions = [0, 1], payoff = np.array([[0, 0], [1, -1]]), state = 'asyn', history = [(0, 0)], gamma = 1, epsilon = 0.02, alpha = 0.01)
-P2 = Player(number = 2, actions = [0, 1], payoff = np.array([[0, 0], [-1, 1]]), state = 'asyn', history = [(0, 0)], gamma = 1, epsilon = 0.02, alpha = 0.01)
+P1 = Player(number = 1, actions = [0, 1], payoff = np.array([[0, 0], [1, -1]]), state = 'asyn', history = [(0, 0)], epsilon = 0.02, alpha = 0.01)
+P2 = Player(number = 2, actions = [0, 1], payoff = np.array([[0, 0], [-1, 1]]), state = 'asyn', history = [(0, 0)], epsilon = 0.02, alpha = 0.01)
 
 ```
 
