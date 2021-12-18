@@ -143,10 +143,9 @@ This game has two mixed Nash equilibria.
 <b>B</b> | 4,7 | 6,13 
 <b>C</b> | 4,4 | 6,6
 
-We show the empirical distribution of play of each profile. 
-
 </div>
 
+We show the empirical distribution of play of each profile. 
 
 ## Usage
 
