@@ -63,7 +63,7 @@ the Player class has the attributes we list below:
 * _epsilon_: exploration rate
 * _alpha_: approximate correlated alpha-equilibrium
 
-We can now create the players.
+We can now create the players by setting a value for each one of the parameters.
 ```python
 
 P1 = Player(number = 1, payoff = np.array([[0, 0], [1, -1]]), state = 'asyn', history = [(0, 0)], epsilon = 0.02, alpha = 0.01)
