@@ -159,16 +159,16 @@ We show the empirical distribution of play of each profile.
 
 <div align="center">
 <table>
-<tr><th>Table 1 Heading 1 </th><th>Table 1 Heading 2</th></tr>
+<tr><th>X </th><th>Y</th></tr>
 <tr><td>
 
-|Table 1| Middle | Table 2|
+|&nbsp;| Middle | Table 2|
 |--|--|--|
 |a| not b|and c |
 
 </td><td>
 
-|b|1|2|3| 
+|&nbsp;|1|2|3| 
 |--|--|--|--|
 |a|s|d|f|
 
