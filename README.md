@@ -93,6 +93,10 @@ G.run()
 ```
 ### Simulation Results
 
+```python
+G.results()
+
+```
 
 ## Diagram
 
