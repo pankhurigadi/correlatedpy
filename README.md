@@ -83,7 +83,7 @@ G.add_player(P2)
 
 ```
 
-### Learning
+## Learning
 
 The game is played repeatedly by calling the instance method _run()_.
 
@@ -91,6 +91,8 @@ The game is played repeatedly by calling the instance method _run()_.
 G.run()
 
 ```
+### Simulation Results
+
 
 ## Examples of Games
 
@@ -126,7 +128,7 @@ This game has a unique mixed Nash equilibrium point.
 
 </div>
 
-The learnign shows the probability of play of each profile. 
+The simulation results show the probability of play of each profile. 
 
 
 ### A 3x2 game
