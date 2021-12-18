@@ -164,14 +164,14 @@ We show the empirical distribution of play of each profile.
 
 |&nbsp;| <b>C</b> | <b>D</b> |
 |--|--|--|
-|<b>A</b>| not b|and c |
-|<b>B</b>| not b|and c |
+|<b>A</b>| 0,0,0 | 0,0,0 |
+|<b>B</b>| 0,0,0 | 0,0,0 |
 </td><td>
 
 |&nbsp;|<b>C</b>|<b>D</b>|
 |--|--|--|
-|<b>A</b>|s|d|
-|<b>B</b>|s|d|
+|<b>A</b>| 0,0,0 | 0,0,0 |
+|<b>B</b>| 0,0,0 | 0,0,0|
 </td></tr> </table>
 </div>
 
