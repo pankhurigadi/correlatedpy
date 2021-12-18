@@ -157,6 +157,7 @@ We show the empirical distribution of play of each profile.
 ### A Three-Player game
 
 
+<div align="center">
 <table>
 <tr><th>Table 1 Heading 1 </th><th>Table 1 Heading 2</th></tr>
 <tr><td>
@@ -172,6 +173,7 @@ We show the empirical distribution of play of each profile.
 |a|s|d|f|
 
 </td></tr> </table>
+</div>
 
 ## Usage
 
