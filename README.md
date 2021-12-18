@@ -147,10 +147,6 @@ We show the proabilty
 
 </div>
 
-<p align="center">
-    <img src="https://raw.githubusercontent.com/eleurent/highway-env/master/../gh-media/docs/media/ddpg.gif?raw=true"><br/>
-    <em>The DDPG agent solving parking-v0.</em>
-</p>
 
 
 ## Usage
