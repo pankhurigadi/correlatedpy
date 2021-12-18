@@ -143,10 +143,9 @@ This game has two mixed Nash equilibria.
 <b>B</b> | 4,7 | 6,13 
 <b>C</b> | 4,4 | 6,6
 
-We show the proabilty 
+We show the empirical distribution of play of each profile. 
 
 </div>
-
 
 
 ## Usage
@@ -155,7 +154,7 @@ We show the proabilty
 
 ### Payoff matrices 
 
-For an n-player game with $r^2$ Creating the payoff matrices by passing two 2 dimensional arrays/lists:
+For an n-player game with h<sub>&theta;</sub>(x) = &theta;<sub>o</sub> x + &theta;<sub>1</sub>x Creating the payoff matrices by passing two 2 dimensional arrays/lists:
 
 ```python
 >>> import correlatedpy as correlated
