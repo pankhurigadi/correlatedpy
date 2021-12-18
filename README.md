@@ -94,6 +94,9 @@ G.run()
 ### Simulation Results
 
 
+## Diagram
+
+
 ## Examples of Games
 
 See the [documentation](https://correlatedpy.readthedocs.io/en/latest/quickstart.html) for some examples and notebooks.
