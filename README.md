@@ -162,16 +162,16 @@ We show the empirical distribution of play of each profile.
 <tr><th>X </th><th>Y</th></tr>
 <tr><td>
 
-|&nbsp;| Middle | Table 2|
+|&nbsp;| <b>C</b> | <b>D</b> |
 |--|--|--|
-|a| not b|and c |
-
+|<b>A</b>| not b|and c |
+|<b>B</b>| not b|and c |
 </td><td>
 
-|&nbsp;|1|2|3| 
-|--|--|--|--|
-|a|s|d|f|
-
+|&nbsp;|<b>C</b>|<b>D</b>|
+|--|--|--|
+|<b>A</b>|s|d|
+|<b>B</b>|s|d|
 </td></tr> </table>
 </div>
 
