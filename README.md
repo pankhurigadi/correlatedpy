@@ -56,12 +56,12 @@ alpha = 0.01 # targetted approximate correlated equilibrium
 ### Players
 the Player class has the attributes we list below:
 
-* number: object instance unique identifier
-* payoff: player's payoff matrix 
-* state: player's state ('syn' or 'asyn')
-* history: game history
-* epsilon: exploration rate
-* alpha: approximate correlated alpha-equilibrium
+* _number_: object instance unique identifier
+* _payoff_: player's payoff matrix 
+* _state_: player's state ('syn' or 'asyn')
+* _history_: game history
+* _epsilon_: exploration rate
+* _alpha_: approximate correlated alpha-equilibrium
 
 We can now create the players.
 ```python
