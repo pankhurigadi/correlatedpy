@@ -187,17 +187,15 @@ Creating the payoff matrice for player i can be performed in the following manne
 
 ```python
 >>> import correlatedpy as correlated
->>> A = [[1, 2], [3, 0]]
->>> B = [[0, 2], [3, 1]]
->>> game = correlated.Game(A, B)
->>> for eq in game.support_enumeration():
-...     print(eq)
-(array([1., 0.]), array([0., 1.]))
-(array([0., 1.]), array([1., 0.]))
-(array([0.5, 0.5]), array([0.5, 0.5]))
->>> game[[0, 1], [1, 0]]
-array([3, 3])
-
+>>> game = correlated.Game(iterations = 100000, history = [(0, 0)], epsilon = 0.02, alpha=0.01)
+>>> u1 [[1, 2], [3, 0]]
+>>> u2 [[0, 2], [3, 1]]
+>>> P1 = correlated.Player(number = 1 payoff = u1 state = 'asyn', history = [(0, 0)], epsilon = 0.02, alpha = 0.01)
+>>> P2 = correlated.Player(number = 2 payoff = u2 state = 'asyn', history = [(0, 0)], epsilon = 0.02, alpha = 0.01)
+>>> game.add_player(P1)
+>>> game.add_player(P2)
+>>> game.run()
+>>> game.results()
 ```
 ## Documentation
 
