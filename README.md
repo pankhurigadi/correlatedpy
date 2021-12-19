@@ -154,7 +154,7 @@ This game has two mixed Nash equilibria.
 
 We show the empirical distribution of play of each profile. 
 
-### three-player game
+### A three-player game
 
 
 <div align="center">
