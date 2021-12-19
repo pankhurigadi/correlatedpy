@@ -181,7 +181,9 @@ We show the empirical distribution of play of each profile.
 
 ### Payoff matrices 
 
-For an n-player game with action spaces of size <img src="https://render.githubusercontent.com/render/math?math=m_{i} = |\mathcal{A}_i| \forall i \in \mathcal{N}">, creating the payoff matrice for player i is performed in the following manner:
+For an n-player game with action spaces of size <img src="https://render.githubusercontent.com/render/math?math=m_{i} = |\mathcal{A}_i| \forall i \in \mathcal{N}">, a payoff matrix of size <img src="https://render.githubusercontent.com/render/math?math=\prod_{i \in \mathcal{N}}m_{i}"> needs to be created for each player. 
+
+Creating the payoff matrice for player i can be performed in the following manner:
 
 ```python
 >>> import correlatedpy as correlated
