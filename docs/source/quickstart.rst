@@ -19,15 +19,15 @@ Here is a quick example of how to create a game:
   u2 = np.array([[-1, 1], [1, -1]])
   
   #Create players' instances
-  P1 = Player(number = 1, payoff = u1, state = 'asyn', history = [(0, 0)], epsilon = 0.02, alpha = 0.01)
-  P2 = Player(number = 2, payoff = u2, state = 'asyn', history = [(0, 0)], epsilon = 0.02, alpha = 0.01)
+  #P1 = Player(number = 1, payoff = u1, state = 'asyn', history = [(0, 0)], epsilon = 0.02, alpha = 0.01)
+  #P2 = Player(number = 2, payoff = u2, state = 'asyn', history = [(0, 0)], epsilon = 0.02, alpha = 0.01)
   
   #Create a game
-  G = Game(iterations = 10000, history = [(0, 0)], epsilon = 0.02, alpha=0.01)
+  #G = Game(iterations = 10000, history = [(0, 0)], epsilon = 0.02, alpha=0.01)
   
   #Add players
-  G.add_player(P1)
-  G.add_player(P2)
+  #G.add_player(P1)
+  #G.add_player(P2)
 
 All the environments
 ~~~~~~~~~~~~~~~~~~~~
