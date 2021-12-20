@@ -4,6 +4,27 @@
    contain the root `toctree` directive.
 
 
+.. |Build Status| image:: https://github.com/oboufous/correlatedpy/workflows/build/badge.svg
+   :target: https://github.com/oboufous/correlatedpy/workflows/build/
+
+.. |Documentation Status| image:: https://readthedocs.org/projects/correlatedpy/badge/?version=latest
+   :target: https://correlatedpy.readthedocs.io/en/latest/
+
+.. |Downloads| image:: https://img.shields.io/pypi/dm/correlatedpy
+   :target: https://pypi.org/project/correlatedpy/
+
+.. |Codacy Status| image:: https://api.codacy.com/project/badge/Grade/63847d9328f64fce9c137b03fcafcc27
+  :target: https://app.codacy.com/manual/oboufous/correlatedpy?utm_source=github.com&utm_medium=referral&utm_content=oboufous/correlatedpy&utm_campaign=Badge_Grade_Dashboard
+
+.. |Coverage Status| image:: https://codecov.io/gh/oboufous/correlatedpy/branch/master/graph/badge.svg
+  :target: https://codecov.io/gh/oboufous/correlatedpy
+
+.. |Contributors| image:: https://img.shields.io/github/contributors/oboufous/correlatedpy
+  :target: https://github.com/oboufous/correlatedpy/graphs/contributors
+
+.. |Environments| image:: https://img.shields.io/github/search/oboufous/correlatedpy/import%20filename:*_env%20path:correlated/env?label=games
+  :target: https://correlatedpy.readthedocs.io/en/latest/quickstart.html#all-the-environments
+
 [![Build Status](https://github.com/oboufous/correlatedpy/actions/workflows/codecov.yml/badge.svg)](https://github.com/oboufous/correlatedpy/actions/workflows/codecov.yml)[![Documentation Status](https://readthedocs.org/projects/correlatedpy/badge/?version=latest)](https://correlatedpy.readthedocs.io/en/latest/?badge=latest)
 [![Downloads](https://img.shields.io/pypi/dm/correlatedpy)](https://pypi.org/project/correlatedpy/)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/63847d9328f64fce9c137b03fcafcc27)](https://app.codacy.com/manual/oboufous/correlatedpy?utm_source=github.com&utm_medium=referral&utm_content=oboufous/correlatedpy&utm_campaign=Badge_Grade_Dashboard)
