@@ -4,8 +4,8 @@
    contain the root `toctree` directive.
 
 
-.. |Build Status| image:: https://github.com/oboufous/correlatedpy/workflows/build/badge.svg
-   :target: https://github.com/oboufous/correlatedpy/workflows/build/
+.. |Build Status| image:: https://github.com/oboufous/correlatedpy/actions/workflows/codecov.yml/badge.svg
+   :target: https://github.com/oboufous/correlatedpy/actions/workflows/codecov.yml
 
 .. |Documentation Status| image:: https://readthedocs.org/projects/correlatedpy/badge/?version=latest
    :target: https://correlatedpy.readthedocs.io/en/latest/
@@ -22,8 +22,8 @@
 .. |Contributors| image:: https://img.shields.io/github/contributors/oboufous/correlatedpy
   :target: https://github.com/oboufous/correlatedpy/graphs/contributors
 
-.. |Environments| image:: https://img.shields.io/github/search/oboufous/correlatedpy/import%20filename:*_env%20path:correlated/env?label=games
-  :target: https://correlatedpy.readthedocs.io/en/latest/quickstart.html#all-the-environments
+.. |Games| image:: https://img.shields.io/badge/Games-6-blue
+  :target: https://correlatedpy.readthedocs.io/en/latest/quickstart.html#games
 
 [![Build Status](https://github.com/oboufous/correlatedpy/actions/workflows/codecov.yml/badge.svg)](https://github.com/oboufous/correlatedpy/actions/workflows/codecov.yml)[![Documentation Status](https://readthedocs.org/projects/correlatedpy/badge/?version=latest)](https://correlatedpy.readthedocs.io/en/latest/?badge=latest)
 [![Downloads](https://img.shields.io/pypi/dm/correlatedpy)](https://pypi.org/project/correlatedpy/)
