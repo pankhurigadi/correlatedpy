@@ -5,7 +5,7 @@
 [![codecov](https://codecov.io/gh/oboufous/correlatedpy/branch/main/graph/badge.svg?token=RW0D49JQE0)](https://codecov.io/gh/oboufous/correlatedpy)
 [![GitHub contributors](https://img.shields.io/github/contributors/oboufous/correlatedpy)](https://github.com/oboufous/correlatedpy/graphs/contributors)
 [![Games](https://img.shields.io/github/search/oboufous/correlatedpy/import%20filename:*_env%20path:correlatedpy/games?label=games)](#the-games)
-![GitHub repo file count (custom path & file type)](https://img.shields.io/github/directory-file-count/oboufous/correlatedpy/games?color=Blue&label=Games&logo=Games&logoColor=Blue&type=.py)
+![GitHub repo file count (custom path & file type)](https://img.shields.io/github/directory-file-count/oboufous/correlatedpy/games?color=Blue&label=Games&logo=Games&logoColor=Blue&type=py.)
 
 # Correlatedpy: a python library for distributed learning of correlated equilibrium in multiplayer strategic games.
 
