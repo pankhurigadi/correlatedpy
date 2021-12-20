@@ -33,7 +33,7 @@
 [![Games](https://img.shields.io/badge/Games-6-blue)](#games)
 
 
-|Build Status| |Documentation Status| |Downloads| |Codacy Status| |Coverage Status| |Contributors| |Environments|
+|Build Status| |Documentation Status| |Downloads| |Codacy Status| |Coverage Status| |Contributors| |Games|
 
 Welcome to `correlatedpy <https://github.com/oboufous/correlatedpy>`_'s documentation!
 ====================================================================================
