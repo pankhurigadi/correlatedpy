@@ -11,20 +11,23 @@ Here is a quick example of how to create a game:
 
 .. jupyter-execute::
 
-  #import gym
-  #import highway_env
-  #from matplotlib import pyplot as plt
-  #%matplotlib inline
+  import numpy as np
+  %matplotlib inline
 
-  #env = gym.make('highway-v0')
-  #env.reset()
-  #for _ in range(3):
-  #    action = env.action_type.actions_indexes["IDLE"]
-  #    obs, reward, done, info = env.step(action)
-  #    env.render()
-
-  #plt.imshow(env.render(mode="rgb_array"))
-  #plt.show()
+  #Create players' payoffs
+  u1 = np.array([[1, -1], [-1, 1]])
+  u2 = np.array([[-1, 1], [1, -1]])
+  
+  #Create players' instances
+  P1 = Player(number = 1, payoff = u1, state = 'asyn', history = [(0, 0)], epsilon = 0.02, alpha = 0.01)
+  P2 = Player(number = 2, payoff = u2, state = 'asyn', history = [(0, 0)], epsilon = 0.02, alpha = 0.01)
+  
+  #Create a game
+  G = Game(iterations = 10000, history = [(0, 0)], epsilon = 0.02, alpha=0.01)
+  
+  #Add players
+  G.add_player(P1)
+  G.add_player(P2)
 
 All the environments
 ~~~~~~~~~~~~~~~~~~~~
