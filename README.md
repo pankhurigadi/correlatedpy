@@ -99,9 +99,6 @@ G.results()
 
 ```
 
-## Diagram
-
-
 ## Games
 
 See the [documentation](https://correlatedpy.readthedocs.io/en/latest/quickstart.html) for some examples and notebooks.
