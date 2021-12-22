@@ -22,11 +22,11 @@
 .. |Contributors| image:: https://img.shields.io/github/contributors/oboufous/correlatedpy
   :target: https://github.com/oboufous/correlatedpy/graphs/contributors
 
-.. |Games| image:: https://img.shields.io/badge/Games-6-blue
+.. |games| image:: https://img.shields.io/badge/games-6-blue
   :target: https://correlatedpy.readthedocs.io/en/latest/quickstart.html#games 
 
 
-|Build Status| |Documentation Status| |Downloads| |Codacy Status| |Coverage Status| |Contributors| |Games|
+|Build Status| |Documentation Status| |Downloads| |Codacy Status| |Coverage Status| |Contributors| |games|
 
 Welcome to `correlatedpy <https://github.com/oboufous/correlatedpy>`_'s documentation!
 ====================================================================================
