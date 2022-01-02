@@ -197,8 +197,8 @@ Creating the payoff matrice for player i can be performed in the following manne
 ```python
 >>> import correlatedpy as correlated
 >>> game = correlated.Game(history = [(0, 0)], epsilon = 0.02)
->>> u1 [[1, 2], [3, 0]]
->>> u2 [[0, 2], [3, 1]]
+>>> u1 = [[1, 2], [3, 0]]
+>>> u2 = [[0, 2], [3, 1]]
 >>> P1 = correlated.Player(number = 1 payoff = u1, history = [(0, 0)], epsilon = 0.02)
 >>> P2 = correlated.Player(number = 2 payoff = u2, history = [(0, 0)], epsilon = 0.02)
 >>> game.add_player(P1)
