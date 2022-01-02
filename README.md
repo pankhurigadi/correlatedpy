@@ -117,7 +117,9 @@ This game has two pure Nash equilibria and one mixed Nash equilibrium.
 
 We show the evolution of the probabilities of play of each profile.
 
-![alt text](https://github.com/oboufous/correlatedpy/blob/main/images/chicken_game_probabilities.png)
+<p align="center">
+  <img src="https://github.com/oboufous/correlatedpy/blob/main/images/chicken_game_probabilities.png" />
+</p>
 
 
 ### [Rock-Paper-Scissors](https://en.wikipedia.org/wiki/Rock_paper_scissors)
@@ -136,6 +138,9 @@ This game has a unique mixed Nash equilibrium point.
 
 The simulation results show the probability of play of each profile. 
 
+<p align="center">
+  <img src="https://github.com/oboufous/correlatedpy/blob/main/images/RPS_probas.png" />
+</p>
 
 ### A 3x2 game
 
@@ -163,16 +168,21 @@ We show the empirical distribution of play of each profile.
 
 |&nbsp;| <b>C</b> | <b>D</b> |
 |--|--|--|
-|<b>A</b>| 0,0,0 | 0,0,0 |
-|<b>B</b>| 0,0,0 | 0,0,0 |
+|<b>A</b>| 1,2,4 | 1,1,1 |
+|<b>B</b>| 3,0,0 | 0,5,0 |
 </td><td>
 
 |&nbsp;|<b>C</b>|<b>D</b>|
 |--|--|--|
-|<b>A</b>| 0,0,0 | 0,0,0 |
-|<b>B</b>| 0,0,0 | 0,0,0|
+|<b>A</b>| 2,2,3 | 1,1,0 |
+|<b>B</b>| 3,0,2 | 0,5,0|
 </td></tr> </table>
 </div>
+
+<p align="center">
+  <img src="https://github.com/oboufous/correlatedpy/blob/main/images/2x2x2_probas.png" />
+</p>
+
 
 ## Usage
 
