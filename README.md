@@ -45,13 +45,12 @@ $ dnf install python3-correlatepy
 ## The Environment
 
 ### Parameters
-The game has three global parameters that are shared accross all instances of all classes of the game. They can be initialized as follows
+The game has two global parameters that are shared accross all instances of all classes of the game. They can be initialized as follows for a two-player game
 
 ```python
 
-history = [(0,0)] # history of action profiles played by players
+history = [(0,0)] # history contaning the initial action profile played by the two players
 epsilon = 0.02 # exploration rate
-alpha = 0.01 # targetted approximate correlated equilibrium
 ```
 
 ### Players
@@ -59,16 +58,14 @@ the Player class has the attributes we list below:
 
 * _number_: object instance unique identifier
 * _payoff_: player's payoff matrix 
-* _state_: player's state ('syn' or 'asyn')
 * _history_: game history
-* _epsilon_: exploration rate
-* _alpha_: approximate correlated alpha-equilibrium
+* _epsilon_: approximate correlated alpha-equilibrium
 
 We can now create the players by setting a value for each one of the parameters.
 ```python
 
-P1 = Player(number = 1, payoff = np.array([[0, 0], [1, -1]]), state = 'asyn', history = [(0, 0)], epsilon = 0.02, alpha = 0.01)
-P2 = Player(number = 2, payoff = np.array([[0, 0], [-1, 1]]), state = 'asyn', history = [(0, 0)], epsilon = 0.02, alpha = 0.01)
+P1 = Player(number = 1, payoff = np.array([[0, 0], [1, -1]]), history = [(0, 0)], epsilon = 0.02)
+P2 = Player(number = 2, payoff = np.array([[0, 0], [-1, 1]]), history = [(0, 0)], epsilon = 0.02)
 
 ```
 
@@ -77,7 +74,7 @@ P2 = Player(number = 2, payoff = np.array([[0, 0], [-1, 1]]), state = 'asyn', hi
 After creating players, we can now instanciate a game, define how many rounds to play, and add the players to it.
 
 ```python
-G = Game(iterations = 100000, history = [(0, 0)], epsilon = 0.02, alpha=0.01)
+G = Game(history = [(0, 0)], epsilon = 0.02)
 
 G.add_player(P1)
 G.add_player(P2)
@@ -93,6 +90,8 @@ G.run()
 
 ```
 ### Simulation Results
+
+The command below plots the evolution of the empirical distribution over joint action profiles, as well as the regrets. 
 
 ```python
 G.results()
@@ -185,11 +184,11 @@ Creating the payoff matrice for player i can be performed in the following manne
 
 ```python
 >>> import correlatedpy as correlated
->>> game = correlated.Game(iterations = 100000, history = [(0, 0)], epsilon = 0.02, alpha=0.01)
+>>> game = correlated.Game(history = [(0, 0)], epsilon = 0.02)
 >>> u1 [[1, 2], [3, 0]]
 >>> u2 [[0, 2], [3, 1]]
->>> P1 = correlated.Player(number = 1 payoff = u1 state = 'asyn', history = [(0, 0)], epsilon = 0.02, alpha = 0.01)
->>> P2 = correlated.Player(number = 2 payoff = u2 state = 'asyn', history = [(0, 0)], epsilon = 0.02, alpha = 0.01)
+>>> P1 = correlated.Player(number = 1 payoff = u1, history = [(0, 0)], epsilon = 0.02)
+>>> P2 = correlated.Player(number = 2 payoff = u2, history = [(0, 0)], epsilon = 0.02)
 >>> game.add_player(P1)
 >>> game.add_player(P2)
 >>> game.run()
