@@ -59,7 +59,7 @@ the Player class has the attributes we list below:
 * _number_: object instance unique identifier
 * _payoff_: player's payoff matrix 
 * _history_: game history
-* _epsilon_: approximate correlated alpha-equilibrium
+* _epsilon_: targetted approximate correlated expislon-equilibrium
 
 We can now create the players by setting a value for each one of the parameters.
 ```python
