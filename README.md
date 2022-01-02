@@ -50,7 +50,7 @@ The game has two global parameters that are shared accross all instances of all 
 ```python
 
 history = [(0,0)] # history contaning the initial action profile played by the two players
-epsilon = 0.02 # exploration rate
+epsilon = 0.02 # targetted approximate correlated equilibrium
 ```
 
 ### Players
