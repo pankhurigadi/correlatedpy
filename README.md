@@ -117,7 +117,7 @@ This game has two pure Nash equilibria and one mixed Nash equilibrium.
 
 We show the evolution of the probabilities of play of each profile.
 
-![alt text](https://github.com/oboufous/correlatedpy/images/chicken_game_probabilities.png?raw=true)
+![alt text](https://github.com/oboufous/correlatedpy/blob/main/images/chicken_game_probabilities.png)
 
 
 ### [Rock-Paper-Scissors](https://en.wikipedia.org/wiki/Rock_paper_scissors)
