@@ -21,7 +21,7 @@
 </p>
 
 
-The library implements a distributed learning algorithm allowing players to converge towards a correlated equilibrium point.
+The library implements a distributed learning algorithm allowing players to converge towards a correlated equilibrium point in any n-player normal form game.
 
 
 ## Installation
