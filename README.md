@@ -158,6 +158,11 @@ This game has two mixed Nash equilibria.
 
 We show the empirical distribution of play of each profile. 
 
+<p align="center">
+  <img src="https://github.com/oboufous/correlatedpy/blob/main/images/3x2.png" />
+</p>
+
+
 ### A three-player game
 
 
