@@ -35,6 +35,12 @@ Click on my |ImageLink|_
 .. |ImageLink| image:: /images/link.png
 .. _ImageLink: https://render.githubusercontent.com/render/math?math=A_{ij}
 
+	.. image:: foo.jpg
+   :target: https://render.githubusercontent.com/render/math?math=A_{ij}
+   
+   
+
+
 A recommend text book on Game Theory is [Maschler2013].
 
 Installing CorrelatedPy
