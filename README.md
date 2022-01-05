@@ -33,6 +33,9 @@ The library implements a distributed learning algorithm allowing players to conv
 * [qe](https://pypi.org/project/qe/)
 * [tqdm](https://pypi.org/project/tqdm/)
 
+### Stable release
+To install the latest stable version:
+
 ```bash
 $ python -m pip install correlatedpy
 ```
