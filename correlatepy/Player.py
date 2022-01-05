@@ -4,14 +4,11 @@ class Agent:
         self.actions = actions
 
 class Player(Agent):
-    def __init__(self, number, actions, payoff, state, history, gamma, epsilon, alpha):
+    def __init__(self, number, actions, payoff, history, epsilon):
         super().__init__(number, actions)
         self.payoff = payoff
-        self.state = state
         self.history = history
-        self.gamma = gamma
         self.epsilon = epsilon
-        self.alpha = alpha
         
         payoff_diff = [[] for alt_action in range(len(actions))]
         for old_action in range(len(actions)):
@@ -47,27 +44,6 @@ class Player(Agent):
         prob_last_action = 1 - sum(probs_array)
         probs_array[last_action] = prob_last_action
         return probs_array
-
-    def updateState(self):
-        self.update_payoff_diffs(self.history[-1])
-        old_action = self.history[-1][self.number]
-        current_regret_array = [self.regret(old_action, alt_action) for alt_action in self.actions]
-        regret_matrix = [[self.regret(old_action, alt_action) for alt_action in self.actions] for old_action in self.actions]
-        max_R = np.amax(regret_matrix)
-           
-        if self.state == 'asyn':
-            if epsilon**(max_R) > random.random():
-                self.state = 'syn'
-            else:
-                self.state = 'asyn'
-        else:
-            if epsilon**(gamma) > random.random():
-                self.state = 'syn'
-            else:
-                if  max_R <= self.alpha:
-                    self.state = 'syn'
-                else:
-                    self.state = 'asyn'
                     
     def updatehistory(self, profile):
         self.history.append(profile)
