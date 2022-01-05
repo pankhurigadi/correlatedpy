@@ -36,6 +36,10 @@ The matrix <img src="https://render.githubusercontent.com/render/math?math=A_{ij
    
 .. math:: ax^2 + bx + c = 0
 
+:math:`\frac{ \sum_{t=0}^{N}f(t,k) }{N}`
+
+:math:`\\frac{ \\sum_{t=0}^{N}f(t,k) }{N}`
+
 A recommend text book on Game Theory is [Maschler2013].
 
 Installing CorrelatedPy
