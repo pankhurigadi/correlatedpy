@@ -26,72 +26,59 @@ The winner is decided according to the following:
 
 We can represent this mathematically using a 3 by 3 matrix:
 
-.. math::
 
-   A =
-   \begin{pmatrix}
-        0 & -1 &  1\\
-        1 &  0 & -1\\
-       -1 &  1 &  0
-   \end{pmatrix}
+<img src="https://render.githubusercontent.com/render/math?math=A=\begin{pmatrix}0 & -1 &  1\\1 &  0 &-1\\-1 &  1 &  0\end{pmatrix}">
 
-The matrix :math:`A_{ij}` shows the utility to the player controlling the rows
-when they play the :math:`i` th row and their opponent (the column player) plays
-the :math:`j` th column. For example, if the row player played Scissors (the 3rd
-strategy) and the column player played Paper (the 2nd strategy) then the row
-player gets: :math:`A_{32}=1` because Scissors cuts Paper.
+The matrix <img src="https://render.githubusercontent.com/render/math?math=A_{ij}"> shows the utility to the player controlling the rows when they play the <img src="https://render.githubusercontent.com/render/math?math=i^{th}"> row and their opponent (the column player) plays the <img src="https://render.githubusercontent.com/render/math?math=j^{th}"> column. For example, if the row player played Scissors (the 3rd strategy) and the column player played Paper (the 2nd strategy) then the row player gets: <img src="https://render.githubusercontent.com/render/math?math=A_{32}=1"> because Scissors cuts Paper.
 
-A recommend text book on Game Theory is [Maschler2013]_.
+A recommend text book on Game Theory is [Maschler2013].
 
-Installing Nashpy
+Installing CorrelatedPy
 -----------------
 
-We are going to study this game using Nashpy, first though we need to install
-it. Nasphy requires the following things to be on your computer:
+We are going to study this game using correlatedpy, first though we need to install it. CorrelatedPy requires the following things to be on your computer:
 
 - Python 3.5 or greater;
-- Scipy 0.19.0 or greater;
-- Numpy 1.12.1 or greater.
+- [matplotlib](https://pypi.org/project/matplotlib/)
+- [numpy](https://pypi.org/project/numpy/)
+- [qe](https://pypi.org/project/qe/)
+- [tqdm](https://pypi.org/project/tqdm/)
 
-Assuming you have those installed, to install Nashpy:
+Assuming you have those installed, to install correlatepy:
 
 - On Mac OSX or linux open a terminal;
 - On Windows open the Command prompt or similar
 
 and type::
 
-    $ python -m pip install nashpy
+    $ python -m pip install correlatedpy
 
 If this does not work, you might not have Python or one of the other
 dependencies. You might also have problems due to :code:`pip` not being
 recognised. To overcome these, using the `Anaconda
 <https://www.continuum.io/downloads>`_ distribution of Python
 is recommended as it installs straightforwardly on all operating systems and
-also includes the libraries needed to run :code:`Nashpy`.
+also includes the libraries needed to run :code:`correlatedpy`.
 
 Creating a game
 ---------------
 
-We can create this game using Nashpy::
+We can create this game using Correlatedpy::
 
-    >>> import nashpy as nash
+    >>> import correlatedpy 
     >>> import numpy as np
-    >>> A = np.array([[0, -1, 1], [1, 0, -1], [-1, 1, 0]])
-    >>> rps = nash.Game(A)
-    >>> rps
-    Zero sum game with payoff matrices:
-    <BLANKLINE>
-    Row player:
-    [[ 0 -1  1]
-     [ 1  0 -1]
-     [-1  1  0]]
-    <BLANKLINE>
-    Column player:
-    [[ 0  1 -1]
-     [-1  0  1]
-     [ 1 -1  0]]
-
-
+    >>> u1 = np.array([[0, -1, 1],
+                [1, 0, -1],
+                [-1, 1, 0]])
+    >>> u2 = np.array([[0, 1, 1],
+                [-1, 0, 1],
+                [1, -1, 0]])
+    >>> P1 = Player(number = 1, payoff = u1, history = [(0, 0)], epsilon = 0.02)
+    >>> P2 = Player(number = 2, payoff = u2, history = [(0, 0)], epsilon = 0.02)
+    >>> G = Game(history = [(0, 0)], epsilon = 0.02)
+    >>> G.add_player(P1)
+    >>> G.add_player(P2)
+    
 The string representation of the game also contains some information. For
 example, it is also showing the matrix that corresponds to the utility of the
 column player. In this case that is :math:`-A` but that does not always
