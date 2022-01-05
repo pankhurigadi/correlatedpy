@@ -8,8 +8,7 @@ Game theory is the study of strategic interactions between rational agents.
 This means that it is the study of interactions when the involved
 parties try and do what is best from their point of view.
 
-As an example let us consider `Rock Paper Scissors
-<https://en.wikipedia.org/wiki/Rock%E2%80%93paper%E2%80%93scissors>`_. This is a
+As an example let us consider `Rock Paper Scissors <https://en.wikipedia.org/wiki/Rock%E2%80%93paper%E2%80%93scissors>`_. This is a
 common game where two players choose one of 3 options (in game theory we call
 these *strategies*):
 
@@ -30,35 +29,6 @@ We can represent this mathematically using a 3 by 3 matrix:
 <img src="https://render.githubusercontent.com/render/math?math=A=\begin{pmatrix}0 & -1 &  1\\1 &  0 &-1\\-1 &  1 &  0\end{pmatrix}">
 
 The matrix <img src="https://render.githubusercontent.com/render/math?math=A_{ij}"> shows the utility to the player controlling the rows when they play the <img src="https://render.githubusercontent.com/render/math?math=i^{th}"> row and their opponent (the column player) plays the <img src="https://render.githubusercontent.com/render/math?math=j^{th}"> column. For example, if the row player played Scissors (the 3rd strategy) and the column player played Paper (the 2nd strategy) then the row player gets: <img src="https://render.githubusercontent.com/render/math?math=A_{32}=1"> because Scissors cuts Paper.
-.. math::
-
-   x = {-b \pm \sqrt{b^2 - 4ac} \over 2a}.
-   
-.. math:: ax^2 + bx + c = 0
-
-:math:`\frac{ \sum_{t=0}^{N}f(t,k) }{N}`
-
-
-$\frac{ \sum_{t=0}^{N}f(t,k) }{N}$
-
-
-:math:`\\frac{ \\sum_{t=0}^{N}f(t,k) }{N}`
-
-.. latex::
-
-  \begin{equation}
-    x<\pi
-  \end{equation}
-  
-  .. class:: mathjax_process
-
-::
-
-  \begin{equation}
-    x<\pi
-  \end{equation}
-  
-  
   
 A recommend text book on Game Theory is [Maschler2013].
 
@@ -68,10 +38,10 @@ Installing CorrelatedPy
 We are going to study this game using correlatedpy, first though we need to install it. CorrelatedPy requires the following things to be on your computer:
 
 - Python 3.5 or greater;
-- [matplotlib](https://pypi.org/project/matplotlib/)
-- [numpy](https://pypi.org/project/numpy/)
-- [qe](https://pypi.org/project/qe/)
-- [tqdm](https://pypi.org/project/tqdm/)
+- `matplotlib<https://pypi.org/project/matplotlib/>`
+- `numpy<https://pypi.org/project/numpy/>`
+- `qe<https://pypi.org/project/qe/>`
+- `tqdm<https://pypi.org/project/tqdm/>`
 
 Assuming you have those installed, to install correlatepy:
 
