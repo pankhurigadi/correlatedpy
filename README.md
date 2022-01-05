@@ -31,6 +31,7 @@ The library implements a distributed learning algorithm allowing players to conv
 * [matplotlib](https://pypi.org/project/matplotlib/)
 * [numpy](https://pypi.org/project/numpy/)
 * [qe](https://pypi.org/project/qe/)
+* [tqdm](https://pypi.org/project/tqdm/)
 
 ```bash
 $ python -m pip install correlatedpy
