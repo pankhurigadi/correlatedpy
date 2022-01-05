@@ -86,17 +86,12 @@ G.add_player(P2)
 The game is played repeatedly by calling the instance method _run()_.
 
 ```python
-G.run()
+G.runGame()
 
 ```
-### Simulation Results
 
-The command below plots the evolution of the empirical distribution over joint action profiles, as well as the regrets. 
+Simulation results are shown. In particular, the correlated equilibrium distribution reached is displyed as well as the evolution of the probabilities of action profiles as depicted in the examples below. 
 
-```python
-G.results()
-
-```
 
 ## Games
 
