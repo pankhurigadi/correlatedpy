@@ -38,10 +38,10 @@ Installing CorrelatedPy
 We are going to study this game using correlatedpy, first though we need to install it. CorrelatedPy requires the following things to be on your computer:
 
 - Python 3.5 or greater;
-- `matplotlib<https://pypi.org/project/matplotlib/>`
-- `numpy<https://pypi.org/project/numpy/>`
-- `qe<https://pypi.org/project/qe/>`
-- `tqdm<https://pypi.org/project/tqdm/>`
+- _`matplotlib<https://pypi.org/project/matplotlib/>`_
+- _`numpy<https://pypi.org/project/numpy/>`_
+- _`qe<https://pypi.org/project/qe/>`_
+- _`tqdm<https://pypi.org/project/tqdm/>`_
 
 Assuming you have those installed, to install correlatepy:
 
