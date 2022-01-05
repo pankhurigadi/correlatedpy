@@ -44,6 +44,22 @@ $\frac{ \sum_{t=0}^{N}f(t,k) }{N}$
 
 :math:`\\frac{ \\sum_{t=0}^{N}f(t,k) }{N}`
 
+.. latex::
+
+  \begin{equation}
+    x<\pi
+  \end{equation}
+  
+  .. class:: mathjax_process
+
+::
+
+  \begin{equation}
+    x<\pi
+  \end{equation}
+  
+  
+  
 A recommend text book on Game Theory is [Maschler2013].
 
 Installing CorrelatedPy
