@@ -22,17 +22,8 @@ The winner is decided according to the following:
 
 We can represent this mathematically using a 3 by 3 matrix:
 
-.. class:: center
-    
-== == == ==
- X  R  P  S
-== == == ==
-1  2  3   4
-3  4  5  6
-== == == ==
-
 +------+------+------+------+
-| A    |    B |    A |    B |
+| A    |    R |    P |    S |
 +======+======+======+======+
 | R    |  0,0 | -1,1 | 1,-1 |
 +------+------+------+------+
@@ -41,25 +32,7 @@ We can represent this mathematically using a 3 by 3 matrix:
 | S    | -1,1 | 1,-1 | 0,0  |
 +------+------+------+------+
 
-
-<b>R</b> | 0,0 | -1,1 | 1,-1
-<b>P</b> | 1,-1 | 0,0 | -1,1
-<b>S</b> | -1,1 | 1,-1 | 0,0
-
-
-<img src="https://render.githubusercontent.com/render/math?math=A=\begin{pmatrix}0 & -1 &  1\\1 &  0 &-1\\-1 &  1 &  0\end{pmatrix}">
-
-The matrix <img src="https://render.githubusercontent.com/render/math?math=A_{ij}"> shows the utility to the player controlling the rows when they play the <img src="https://render.githubusercontent.com/render/math?math=i^{th}"> row and their opponent (the column player) plays the <img src="https://render.githubusercontent.com/render/math?math=j^{th}"> column. For example, if the row player played Scissors (the 3rd strategy) and the column player played Paper (the 2nd strategy) then the row player gets: <img src="https://render.githubusercontent.com/render/math?math=A_{32}=1"> because Scissors cuts Paper.
-  
-Click on my |ImageLink|_
-
-.. |ImageLink| image:: /images/link.png
-.. _ImageLink: https://render.githubusercontent.com/render/math?math=A_{ij}
-
-	.. image:: foo.jpg
-   :target: https://render.githubusercontent.com/render/math?math=A_{ij}
-   
-   
+The matrix shows the utility to the player controlling the rows when they play the XXX  and their opponent (the column player) plays the YYY column. For example, if the row player played Scissors (the 3rd strategy) and the column player played Paper (the 2nd strategy) then the row player gets 1 because Scissors cuts Paper.
 
 
 A recommend text book on Game Theory is [Maschler2013].
