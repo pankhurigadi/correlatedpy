@@ -89,3 +89,7 @@ A correalted equilibrium corresponds to strategies at which no play has an incen
 
 Over time we can see a rational behaviour emerge, as players implements certain heurstics (regret minimisation in our case). Note that a regret minimizing strategy guarantees convergence only to the *set* of correlated equilibria.
 
+
+    >>> G.runGame() 
+    >>> G.getResults()
+    
