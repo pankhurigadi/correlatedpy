@@ -12,6 +12,7 @@ Here is a quick example of how to create a game:
 .. jupyter-execute::
 
   import numpy as np
+  import correlatedpy
   %matplotlib inline
 
   #Create players' payoffs
