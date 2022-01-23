@@ -29,25 +29,6 @@ This should be achieved in a ``YourGame._make_player()`` method, called from ``Y
 
 See :ref:`Players <player_player>` for reference, and existing games as examples.
 
-Create the vehicles
-------------------
-
-The second step is to populate your road network with vehicles. This should be achieved in a ``YourEnv._make_road()``
-method, called from ``YourEnv.reset()`` to set the ``self.road.vehicles`` list of :py:class:`~highway_env.vehicle.kinematics.Vehicle`.
-
-First, define the controlled ego-vehicle by setting ``self.vehicle``. The class of controlled vehicle depends on the
-choice of action type, and can be accessed as ``self.action_type.vehicle_class``.
-Other vehicles can be created more freely, and added to the ``self.road.vehicles`` list.
-
-See :ref:`vehicle behaviors <vehicle_behavior>` for reference, and existing environments as examples.
-
-Make the game configurable
-------------------------------------
-
-To make a part of your environment configurable, overload the :py:meth:`~highway_env.envs.common.abstract.AbstractEnv.default_config`
-method to define new ``{"config_key": value}`` pairs with default values. These configurations then be accessed in your
-environment implementation with ``self.config["config_key"]``, and once the environment is created, it can be configured with
-``env.configure({"config_key": other_value})`` followed by ``env.reset()``.
 
 Register the game
 ---------------------------
@@ -71,7 +52,7 @@ and import it from ``correlatedpy/games/__init__.py``:
 Profit
 --------
 That's it!
-You should now be able to run the environment:
+You should now be able to run the algorithm:
 
 .. code-block:: python
 
