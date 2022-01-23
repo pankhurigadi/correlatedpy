@@ -22,12 +22,17 @@ The winner is decided according to the following:
 
 We can represent this mathematically using a 3 by 3 matrix:
 
+<div align="center">
+    
 == ==
 A  B
 == ==
 1  2
 3  4
 == ==
+
+</div>
+
 
 +---+---+
 | A | B |
