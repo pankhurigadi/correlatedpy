@@ -87,14 +87,14 @@ G.add_player(P2)
 
 ## Learning
 
-The game is played repeatedly by calling the instance method _run()_.
+The game is played repeatedly by calling the instance method _runGame()_.
 
 ```python
 G.runGame()
-
+G.getResults()
 ```
 
-Simulation results are shown. In particular, the correlated equilibrium distribution reached is displyed as well as the evolution of the probabilities of action profiles as depicted in the examples below. 
+Simulation results are shown. In particular, the correlated equilibrium distribution reached is displyed as well as the evolution of the probabilities of action profiles as depicted in the examples below. Note that all game attributes can be used for further analysis (e.g., regret computation).
 
 
 ## Games
@@ -207,8 +207,8 @@ Creating the payoff matrice for player i can be performed in the following manne
 >>> P2 = Player(number = 2 payoff = u2, history = [(0, 0)], epsilon = 0.02)
 >>> game.add_player(P1)
 >>> game.add_player(P2)
->>> game.run()
->>> game.results()
+>>> game.runGame()
+>>> game.getResults()
 ```
 ## Documentation
 
