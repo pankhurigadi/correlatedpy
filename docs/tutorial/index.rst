@@ -21,6 +21,14 @@ The winner is decided according to the following:
 
 
 We can represent this mathematically using a 3 by 3 matrix:
++----------+----------+
+| Header 1 | Header 2 |
++==========+==========+
+| 1        | one      |
++----------+----------+
+| 2        | two      |
++----------+----------+
+
 
 
 <img src="https://render.githubusercontent.com/render/math?math=A=\begin{pmatrix}0 & -1 &  1\\1 &  0 &-1\\-1 &  1 &  0\end{pmatrix}">
