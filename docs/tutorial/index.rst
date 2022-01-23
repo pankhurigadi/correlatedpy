@@ -23,7 +23,7 @@ The winner is decided according to the following:
 We can represent this mathematically using a 3 by 3 matrix:
 
 +------+------+------+------+
-| &nbsp |    R |    P |    S |
+| X    |    R |    P |    S |
 +======+======+======+======+
 | R    |  0,0 | -1,1 | 1,-1 |
 +------+------+------+------+
