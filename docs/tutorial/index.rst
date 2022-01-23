@@ -24,13 +24,12 @@ We can represent this mathematically using a 3 by 3 matrix:
 
 .. class:: center
     
-== ==
-A  B
-== ==
-1  2
-3  4
-== ==
-
+== == == ==
+    R  P  S
+== == == ==
+1  2  3   4
+3  4  5  6
+== == == ==
 
 +---+---+
 | A | B |
@@ -39,6 +38,10 @@ A  B
 +---+---+
 | 3 | 4 |
 +---+---+
+
+<b>R</b> | 0,0 | -1,1 | 1,-1
+<b>P</b> | 1,-1 | 0,0 | -1,1
+<b>S</b> | -1,1 | 1,-1 | 0,0
 
 
 <img src="https://render.githubusercontent.com/render/math?math=A=\begin{pmatrix}0 & -1 &  1\\1 &  0 &-1\\-1 &  1 &  0\end{pmatrix}">
