@@ -62,7 +62,7 @@ If this does not work, you might not have Python or one of the other dependencie
 Creating a game
 ---------------
 
-We can create this game using Correlatedpy::
+We can create the Rock-Paper-Scissors game using Correlatedpy::
 
     >>> import correlatedpy 
     >>> import numpy as np
@@ -77,29 +77,15 @@ We can create this game using Correlatedpy::
     >>> G = Game(history = [(0, 0)], epsilon = 0.02)
     >>> G.add_player(P1)
     >>> G.add_player(P2)
-    
 
-
-Computing a Correlated Equilibrium
------------------------------------
-
-Nash equilibria is (in two player games) a pair of strategies at which both
-players do not have an incentive to deviate. We can find these using
-:code:`Nashpy`::
-
-    >>> eqs = rps.support_enumeration()
-    >>> list(eqs)
-    [(array([0.333..., 0.333..., 0.333...]), array([0.333..., 0.333..., 0.333...]))]
-
-*Nash* equilibria is an important concept as it allows to gain an initial
-understanding of emergent behaviour in complex systems.
 
 Learning in games
 -----------------
 
-Nash equilibria are not always observed during non cooperative play: they
-correspond to strategies at which no play has an incentive to move but that does
-not necessarily imply that players can arrive at that equilibria naturally.
+Computing a correlatd equilibrium is not possible when the game parameters are not fully known to all players. Therefore, we resort to learning
+a *correlated* equilibria is an important concept as it allows to gain an initial understanding of emergent behaviour in complex systems, similarly to Nash equilibrium.
 
-Over time we can see the behaviour emerge, as the play counts can be normalised
-to give strategy vectors. Note that these will not always converge.
+A correalted equilibrium corresponds to strategies at which no play has an incentive to move but that does not necessarily imply that players can arrive at that equilibria naturally.
+
+Over time we can see a rational behaviour emerge, as players implements certain heurstics (regret minimisation in our case). Note that a regret minimizing strategy guarantees convergence only to the *set* of correlated equilibria.
+
