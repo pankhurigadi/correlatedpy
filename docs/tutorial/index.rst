@@ -21,13 +21,12 @@ The winner is decided according to the following:
 
 
 We can represent this mathematically using a 3 by 3 matrix:
-+----------+----------+
-| Header 1 | Header 2 |
-+==========+==========+
-| 1        | one      |
-+----------+----------+
-| 2        | two      |
-+----------+----------+
+.. table::
++---------+----------+----------+
+| Column 1| Column 2 | Column 3 |
++=========+==========+==========+
+| Row     | Value 1  | Value 2  |
++---------+----------+----------+
 
 
 
