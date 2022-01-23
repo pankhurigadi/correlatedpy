@@ -21,13 +21,14 @@ The winner is decided according to the following:
 
 
 We can represent this mathematically using a 3 by 3 matrix:
-.. table::
-+---------+----------+----------+
-| Column 1| Column 2 | Column 3 |
-+=========+==========+==========+
-| Row     | Value 1  | Value 2  |
-+---------+----------+----------+
 
+.. list-table::
+* - Column 1
+  - Column 2
+  - Column 3
+* - Row
+  - Value 1
+  - Value 2
 
 
 <img src="https://render.githubusercontent.com/render/math?math=A=\begin{pmatrix}0 & -1 &  1\\1 &  0 &-1\\-1 &  1 &  0\end{pmatrix}">
